@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "232157798848",
+    "firebase_url": "https://login-and-signup-99c68.firebaseio.com",
+    "project_id": "login-and-signup-99c68",
+    "storage_bucket": "login-and-signup-99c68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232157798848:android:87534bf139ac897f",
+        "android_client_info": {
+          "package_name": "com.example.android.loginusingsqlite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232157798848-v2vcagglsmk28pmd6qpe2f9gnvlgta40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI6zuSY9LoKMjSfGPJC5YmNhjBp1OAlCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
