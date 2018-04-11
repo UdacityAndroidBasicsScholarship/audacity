@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Audacity</string>
+    <string name="app_name">Login Using SQlite</string>
+    <string name="please_enter_username">Please enter username</string>
+    <string name="please_enter_password">Please Enter Password</string>
+    <string name="logo">Logo</string>
+    <string name="new_user">New User?</string>
+    <string name="sign_up_now">Sign Up Now!</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
