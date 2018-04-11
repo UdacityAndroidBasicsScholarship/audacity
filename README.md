@@ -10,7 +10,7 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
   <li>Results</li>
 </ol>
 
-## Future Addons:
+## Future Addons
 <ol>
   <li>Git Integration</li>
   <li>Slack Channel</li>
@@ -18,7 +18,7 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
   <li>Popular Apps</li>
 </ol>
 
-## Contributors:
+## Contributors
 <ul>
   <li>Kshitij Suri</li>
   <li>pallab (Pallab Kalita)</li>
@@ -36,5 +36,5 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
   <li>Suggest UI Enhancements</li>
 </ul>
 
-**Wanna Contribute?**
+**Wanna Contribute?**</br>
 Feel Free To Fork The Repo And Request A PR.
