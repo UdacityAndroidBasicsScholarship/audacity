@@ -26,6 +26,7 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
   <li>SABDAR SHAIK</li>
   <li>thisismenaseem</li>
   <li>Suhanshu Patel</li>
+  <li>Vipul Aggarwal</li>
 </ul>
 
 **How You Can Contribute?**
