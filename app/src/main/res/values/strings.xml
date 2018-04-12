@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Audacity</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="resend_verification">RESEND VERIFICATION LINK</string>
+    <string name="create_account_login">NOT ONE OF US ? CREATE ACCOUNT</string>
+    <string name="signup">SIGN UP</string>
+    <string name="already_register">ALREADY REGISTERED ! CLICK HERE</string>
+    <string name="credential_create_account">Please fill the credential</string>
+    <string name="changePassword">CHANGE PASSWORD</string>
+    <string name="send_verification">SEND VERIFICATION LINK</string>
 </resources>

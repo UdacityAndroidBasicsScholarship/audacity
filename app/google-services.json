@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "486249826057",
+    "firebase_url": "https://audacity-2ee47.firebaseio.com",
+    "project_id": "audacity-2ee47",
+    "storage_bucket": "audacity-2ee47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486249826057:android:c28c666d950a4fea",
+        "android_client_info": {
+          "package_name": "com.udacity.audacity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486249826057-ns95cdt10jut4v9uitjplri6rt77iu3f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udacity.audacity",
+            "certificate_hash": "37042ec328ba38ccab1c7322e1b6b938acaff6ba"
+          }
+        },
+        {
+          "client_id": "486249826057-3tuo8i9f70jpo9ku0nh71ooaulfbjgk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiGO2-vanULE_7T3mFC8qvG1_zYAttQfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486249826057-3tuo8i9f70jpo9ku0nh71ooaulfbjgk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
