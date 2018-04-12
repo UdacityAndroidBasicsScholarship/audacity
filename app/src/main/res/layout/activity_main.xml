@@ -32,7 +32,9 @@
         android:layout_marginTop="50dp"
         android:padding="6dp"
         android:background="@drawable/rounded"
-        android:hint="@string/please_enter_username">
+        android:hint="@string/please_enter_username"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#9E9E9E">
 
     </EditText>
 
@@ -47,26 +49,30 @@
         android:inputType="textPassword"
         android:layout_marginTop="50dp"
         android:padding="6dp"
-        android:hint="@string/please_enter_password">
+        android:hint="@string/please_enter_password"
+        android:textColorHint="#9E9E9E">
 
     </EditText>
 
 
     <TextView
+        android:layout_margin="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sign_up_details"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/passwordLogin"
         android:textColor="#afefef"
         android:text="@string/new_user"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_up_now"
+        android:textColorHint="#9E9E9E"
         android:id="@+id/sign_up_link"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:onClick="sign_up_page"
         android:layout_below="@id/sign_up_details"
         android:layout_centerHorizontal="true"
