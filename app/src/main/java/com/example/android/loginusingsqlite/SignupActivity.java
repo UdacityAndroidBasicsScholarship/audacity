@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -59,10 +60,12 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
         if(TextUtils.isEmpty(username)){
             Toast.makeText(SignupActivity.this, "Please enter a valid username", Toast.LENGTH_SHORT).show();
+            requestFocus(Username);
             return ;
         }
         if (TextUtils.isEmpty(password)){
             Toast.makeText(SignupActivity.this, "Please enter a valid(text) password", Toast.LENGTH_SHORT).show();
+            requestFocus(Password);
             return ;
         }
         progressDialog.setMessage("Registering User....");
@@ -79,10 +82,18 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                     finish();
                 } else{
                     Toast.makeText(SignupActivity.this, "Could not register try again", Toast.LENGTH_LONG).show();
+                    progressDialog.dismiss();
                 }
 
             }
         });
 
     }
+
+    private void requestFocus(View view){
+        if(view.requestFocus()){
+            getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+        }
+    }
+
 }
