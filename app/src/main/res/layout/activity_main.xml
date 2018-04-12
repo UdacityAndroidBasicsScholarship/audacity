@@ -1,19 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/grade"
     android:layout_height="match_parent"
-    tools:context="com.udacity.audacity.MainActivity">
+    tools:context="com.example.android.loginusingsqlite.MainActivity">
 
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:id="@+id/logo"
+        android:layout_above="@id/usernameLogin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/logo1"
+        android:contentDescription="@string/logo" />
+
+    <EditText
+        android:id="@+id/usernameLogin"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="6dp"
+        android:background="@drawable/rounded"
+        android:hint="@string/please_enter_username">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameLogin"
+        android:background="@drawable/rounded"
+        android:layout_margin="16dp"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:padding="6dp"
+        android:hint="@string/please_enter_password">
+
+    </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_up_details"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordLogin"
+        android:textColor="#afefef"
+        android:text="@string/new_user"/>
     <TextView
         android:id="@+id/text_view_email_mainactivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/sign_up_now"
+        android:id="@+id/sign_up_link"
+        android:textSize="14dp"
+        android:onClick="sign_up_page"
+        android:layout_below="@id/sign_up_details"
+        android:layout_centerHorizontal="true"
+        android:textColor="#afefef"/>
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:id="@+id/login"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -13,6 +13,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.zip.Inflater;
 
+import com.example.android.loginusingsqlite.R;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
