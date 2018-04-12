@@ -28,7 +28,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/rounded"
             android:textColor="#000000"
-            android:hint="Email Address"
+            android:hint="Enter Email Address"
             android:textColorHint="#9E9E9E" />
 
         <EditText
@@ -41,7 +41,7 @@
             android:textColor="#000000"
             android:inputType="textPassword"
             android:background="@drawable/rounded"
-            android:hint="Password"
+            android:hint="Enter Password"
             android:textColorHint="#9E9E9E" />
 
 
