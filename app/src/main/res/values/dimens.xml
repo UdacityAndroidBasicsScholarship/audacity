@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--These dimensions are for the logo of the App -->
+    <dimen name="logo_width">120dp</dimen>
+    <dimen name="logo_height">100dp</dimen>
+    <dimen name="logo_margin_bottom">80dp</dimen>
+    <dimen name="logo_margin_top">80dp</dimen>
+
+    <!--These dimensions are for the User Name of the App -->
+    <dimen name="userName_layout_margin">16dp</dimen>
+    <dimen name="userName_padding">6dp</dimen>
+    <dimen name="userName_layout_MarginTop">50dp</dimen>
+
+    <!--These dimensions are for the Password of the App -->
+    <dimen name="password_layout_margin">16dp</dimen>
+    <dimen name="password_padding">6dp</dimen>
+    <dimen name="password_layout_marginTop">50dp</dimen>
+
+    <!--This dimension is for the New Sign Up of the App -->
+    <dimen name="newUser_SignUp_textSize">14dp</dimen>
+
+    <!--These dimensions are for the Floating Button of the App -->
+    <dimen name="floatingActionButton_layoutMargin">24dp</dimen>
+
+</resources>
