@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -34,7 +33,6 @@
             android:layout_margin="16dp"
             android:background="@drawable/rounded"
             android:textColor="#000000"
-            android:textColorHint="#000000"
             android:hint="Please Enter  Username" />
 
         <EditText
@@ -45,7 +43,6 @@
             android:padding="8dp"
             android:layout_margin="16dp"
             android:textColor="#000000"
-            android:textColorHint="#000000"
             android:inputType="textPassword"
             android:background="@drawable/rounded"
             android:hint="Please Enter  Password" />

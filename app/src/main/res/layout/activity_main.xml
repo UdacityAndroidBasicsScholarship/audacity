@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:padding="6dp"
-        android:textColorHint="#000000"
         android:background="@drawable/rounded"
         android:hint="@string/please_enter_username">
 
@@ -48,7 +47,6 @@
         android:inputType="textPassword"
         android:layout_marginTop="50dp"
         android:padding="6dp"
-        android:textColorHint="#000000"
         android:hint="@string/please_enter_password">
 
     </EditText>
