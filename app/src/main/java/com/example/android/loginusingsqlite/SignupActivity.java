@@ -78,6 +78,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                     startActivity(start);
                     finish();
                 } else{
+                    progressDialog.cancel();
                     Toast.makeText(SignupActivity.this, "Could not register try again", Toast.LENGTH_LONG).show();
                 }
 
