@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.loginusingsqlite">
+    package="com.example.android.audacity">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.android.audacity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".GettingStartedActivity"></activity>
+        <activity android:name="com.example.android.audacity.SignupActivity" />
+        <activity android:name="com.example.android.audacity.GettingStartedActivity"></activity>
     </application>
 
 </manifest>
