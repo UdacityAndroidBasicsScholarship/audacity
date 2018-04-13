@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.loginusingsqlite.MainActivity">
 
-
-
     <ImageView
         android:layout_width="120dp"
         android:layout_height="100dp"
@@ -31,9 +29,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:padding="6dp"
-        android:textColorHint="#000000"
+        android:textColorHint="#9E9E9E"
         android:background="@drawable/rounded"
-        android:hint="@string/please_enter_username">
+        android:hint="@string/please_enter_username"
+        android:inputType="textEmailAddress">
 
     </EditText>
 
@@ -48,7 +47,7 @@
         android:inputType="textPassword"
         android:layout_marginTop="50dp"
         android:padding="6dp"
-        android:textColorHint="#000000"
+        android:textColorHint="#9E9E9E"
         android:hint="@string/please_enter_password">
 
     </EditText>
@@ -58,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sign_up_details"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/passwordLogin"
         android:textColor="#afefef"
@@ -68,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sign_up_now"
         android:id="@+id/sign_up_link"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:onClick="sign_up_page"
         android:layout_below="@id/sign_up_details"
         android:layout_centerHorizontal="true"

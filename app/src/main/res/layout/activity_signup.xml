@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,11 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     tools:context="com.example.android.loginusingsqlite.SignupActivity">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.android.loginusingsqlite.SignupActivity">
 
         <ImageView
             android:id="@+id/logo"
@@ -34,7 +28,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/rounded"
             android:textColor="#000000"
-            android:textColorHint="#000000"
+            android:textColorHint="#9E9E9E"
             android:hint="Please Enter  Username" />
 
         <EditText
@@ -45,7 +39,7 @@
             android:padding="8dp"
             android:layout_margin="16dp"
             android:textColor="#000000"
-            android:textColorHint="#000000"
+            android:textColorHint="#9E9E9E"
             android:inputType="textPassword"
             android:background="@drawable/rounded"
             android:hint="Please Enter  Password" />
@@ -58,9 +52,9 @@
             android:layout_below="@id/password"
             android:layout_centerHorizontal="true"
             android:onClick="login_page"
-            android:text="Already a User? Login"
+            android:text="Already a User?   Login"
             android:textColor="#afefef"
-            android:textSize="14dp" />
+            android:textSize="14sp" />
 
 
         <Button
@@ -72,8 +66,5 @@
             android:layout_margin="16dp"
             android:background="@drawable/round"
             android:text="Sign Up!" />
-
-    </RelativeLayout>
-
 
 </RelativeLayout>
