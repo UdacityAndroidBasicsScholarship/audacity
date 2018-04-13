@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -21,9 +22,11 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
     private EditText Username;
     private EditText Password;
+    private EditText Repassword;
     private Button signup;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
+    private TextView WarningTextSignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +36,12 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
+
         Username = findViewById(R.id.username);
         Password = findViewById(R.id.password);
+        Repassword = findViewById(R.id.repassword);
+        WarningTextSignUp=findViewById(R.id.warning_signup_account);
+
         signup = findViewById(R.id.sign_up);
         signup.setOnClickListener(this);
 
@@ -48,23 +55,42 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-        if(view == signup){
+        if (view == signup) {
             registerUser();
         }
     }
 
     private void registerUser() {
+
         String username = Username.getText().toString().trim();
         String password = Password.getText().toString().trim();
+        String repassword = Repassword.getText().toString().trim();
 
-        if(TextUtils.isEmpty(username)){
-            Toast.makeText(SignupActivity.this, "Please enter a valid username", Toast.LENGTH_SHORT).show();
-            return ;
+        WarningTextSignUp.setVisibility(View.INVISIBLE);
+
+
+        if (TextUtils.isEmpty(username)) {
+            WarningTextSignUp.setText("USERNAME FIELD IS EMPTY");
+            WarningTextSignUp.setVisibility(View.VISIBLE);
+            return;
         }
-        if (TextUtils.isEmpty(password)){
-            Toast.makeText(SignupActivity.this, "Please enter a valid(text) password", Toast.LENGTH_SHORT).show();
-            return ;
+        if (TextUtils.isEmpty(password)) {
+            WarningTextSignUp.setText("PASSWORD FIELD IS EMPTY");
+            WarningTextSignUp.setVisibility(View.VISIBLE);
+            return;
         }
+        if (TextUtils.isEmpty(repassword)) {
+            WarningTextSignUp.setText("PASSWORD FIELD IS EMPTY");
+            WarningTextSignUp.setVisibility(View.VISIBLE);
+            return;
+        }
+
+        if (!(password.equals(repassword))) {
+            WarningTextSignUp.setText("PASSWORD SHOULD MATCH");
+            WarningTextSignUp.setVisibility(View.VISIBLE);
+            return;
+        }
+
         progressDialog.setMessage("Registering User....");
         progressDialog.show();
 
@@ -72,12 +98,16 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
-                if (task.isSuccessful()){
+
+
+                if (task.isSuccessful()) {
+                    progressDialog.dismiss();
                     Toast.makeText(SignupActivity.this, "Registration Successful!", Toast.LENGTH_LONG).show();
                     Intent start = new Intent(SignupActivity.this, GettingStartedActivity.class);
                     startActivity(start);
                     finish();
-                } else{
+                } else {
+                    progressDialog.dismiss();
                     Toast.makeText(SignupActivity.this, "Could not register try again", Toast.LENGTH_LONG).show();
                 }
 

@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText Username;
     private EditText Password;
@@ -54,20 +54,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if(view == login){
+        if (view == login) {
             loginuser();
         }
     }
 
-    private void loginuser() {String username = Username.getText().toString().trim();
+    private void loginuser() {
+        String username = Username.getText().toString().trim();
         String password = Password.getText().toString().trim();
-        if(TextUtils.isEmpty(username)){
+        if (TextUtils.isEmpty(username)) {
             Toast.makeText(MainActivity.this, "Enter a valid username", Toast.LENGTH_SHORT).show();
-            return ;
+            return;
         }
-        if(TextUtils.isEmpty(password)){
+        if (TextUtils.isEmpty(password)) {
             Toast.makeText(MainActivity.this, "Enter a valid password", Toast.LENGTH_SHORT).show();
-            return ;
+            return;
         }
 
         progressDialog.setMessage("Checking info...");
@@ -75,12 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         firebaseAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
+                if (task.isSuccessful()) {
                     Toast.makeText(MainActivity.this, "Login sucessful", Toast.LENGTH_LONG).show();
                     Intent profile = new Intent(MainActivity.this, GettingStartedActivity.class);
                     startActivity(profile);
                     progressDialog.dismiss();
-                }else{
+                } else {
                     Toast.makeText(MainActivity.this, "Login failed", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
                     Username.setText("");
