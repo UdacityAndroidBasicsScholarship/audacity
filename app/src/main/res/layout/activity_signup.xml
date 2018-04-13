@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context="com.example.android.loginusingsqlite.SignupActivity">
+    tools:context="com.example.android.audacity.SignupActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.android.loginusingsqlite.SignupActivity">
+        tools:context="com.example.android.audacity.SignupActivity">
 
         <ImageView
             android:id="@+id/logo"
@@ -34,7 +34,7 @@
             android:background="@drawable/rounded"
             android:textColor="#000000"
             android:textColorHint="#000000"
-            android:hint="Please Enter  Username" />
+            android:hint="Please Enter Your Email ID" />
 
         <EditText
             android:id="@+id/password"

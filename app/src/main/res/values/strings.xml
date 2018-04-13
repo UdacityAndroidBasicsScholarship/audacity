@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Login Using SQlite</string>
+    <string name="app_name">Audacity</string>
     <string name="please_enter_username">Please enter username</string>
     <string name="please_enter_password">Please Enter Password</string>
     <string name="logo">Logo</string>

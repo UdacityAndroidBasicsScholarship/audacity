@@ -1,4 +1,4 @@
-package com.example.android.loginusingsqlite;
+package com.example.android.audacity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,7 +15,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -24,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FloatingActionButton login;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
+
+    // test comment
 
 
     @Override

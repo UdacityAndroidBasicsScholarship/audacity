@@ -1,4 +1,4 @@
-package com.example.android.loginusingsqlite;
+package com.example.android.audacity;
 
 import org.junit.Test;
 

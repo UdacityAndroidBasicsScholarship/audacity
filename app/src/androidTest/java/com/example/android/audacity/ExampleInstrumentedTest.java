@@ -1,4 +1,4 @@
-package com.example.android.loginusingsqlite;
+package com.example.android.audacity;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
