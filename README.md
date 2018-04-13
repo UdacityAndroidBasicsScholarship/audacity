@@ -18,7 +18,7 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
   <li>Popular Apps</li>
 </ol>
 
-## Contributors
+## Maintainers
 <ul>
   <li>Kshitij Suri</li>
   <li>pallab (Pallab Kalita)</li>
