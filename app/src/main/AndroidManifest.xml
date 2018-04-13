@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.android.audacity.SignupActivity" />
-        <activity android:name="com.example.android.audacity.GettingStartedActivity"></activity>
+        <activity android:name="com.example.android.audacity.GettingStartedActivity"/>
     </application>
 
 </manifest>

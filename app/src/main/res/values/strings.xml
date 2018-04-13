@@ -9,4 +9,10 @@
     <string name="enter_username">Enter Username</string>
     <string name="enter_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="getting_start">Getting started</string>
+    <string name="logout">Logout</string>
+    <string name="email_id">Please Enter Your Email ID</string>
+    <string name="password">Please Enter Password</string>
+    <string name="prev_user">Already a User? Login</string>
+    <string name="sign_up">Sign Up!</string>
 </resources>
