@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Intent signup = new Intent(MainActivity.this, SignupActivity.class);
         startActivity(signup);
+        finish();
     }
 
     @Override
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+                    progressDialog.dismiss();
                     Toast.makeText(MainActivity.this, "Login sucessful", Toast.LENGTH_LONG).show();
                     Intent profile = new Intent(MainActivity.this, GettingStartedActivity.class);
                     startActivity(profile);
