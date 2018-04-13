@@ -3,7 +3,6 @@ package com.example.android.loginusingsqlite;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -16,6 +15,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -78,7 +80,20 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                     startActivity(start);
                     finish();
                 } else{
-                    Toast.makeText(SignupActivity.this, "Could not register try again", Toast.LENGTH_LONG).show();
+                    progressDialog.hide();
+                    String text;
+                    try {
+                        throw task.getException();
+                    } catch(FirebaseAuthWeakPasswordException e) {
+                        text = "Please a stronger password and try again.";
+                    } catch(FirebaseAuthInvalidCredentialsException e) {
+                        text = "Please enter a valid e-mail address and try again.";
+                    } catch(FirebaseAuthUserCollisionException e) {
+                        text = "An User with same email already exists and try again.";
+                    } catch (Exception e){
+                        text = "Unknown error. Please try again.";
+                    }
+                    Toast.makeText(SignupActivity.this, text, Toast.LENGTH_LONG).show();
                 }
 
             }
