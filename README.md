@@ -18,7 +18,7 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
   <li>Popular Apps</li>
 </ol>
 
-## Contributors
+## Maintainers
 <ul>
   <li>Kshitij Suri</li>
   <li>pallab (Pallab Kalita)</li>
@@ -28,6 +28,9 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
   <li>Suhanshu Patel</li>
   <li>Mohan Cm</li>
 </ul>
+
+## Contributors
+All Google Udacity Andriod Basics Scholars are eligible to Contribute
 
 **How You Can Contribute?**
 <ul>
