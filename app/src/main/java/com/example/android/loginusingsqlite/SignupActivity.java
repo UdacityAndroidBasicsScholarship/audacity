@@ -70,17 +70,17 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
 
         if (TextUtils.isEmpty(username)) {
-            WarningTextSignUp.setText("USERNAME FIELD IS EMPTY");
+            WarningTextSignUp.setText("USERNAME FIELD SHOULD NOT BE  EMPTY");
             WarningTextSignUp.setVisibility(View.VISIBLE);
             return;
         }
         if (TextUtils.isEmpty(password)) {
-            WarningTextSignUp.setText("PASSWORD FIELD IS EMPTY");
+            WarningTextSignUp.setText("PASSWORD FIELD SHOULD NOT BE EMPTY");
             WarningTextSignUp.setVisibility(View.VISIBLE);
             return;
         }
         if (TextUtils.isEmpty(repassword)) {
-            WarningTextSignUp.setText("PASSWORD FIELD IS EMPTY");
+            WarningTextSignUp.setText("RE-PASSWORD FIELD SHOULD NOT BE EMPTY");
             WarningTextSignUp.setVisibility(View.VISIBLE);
             return;
         }
