@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/grade"
     android:layout_height="match_parent"
-    tools:context="com.example.android.loginusingsqlite.MainActivity">
+    tools:context="com.example.android.audacity.MainActivity">
 
 
 

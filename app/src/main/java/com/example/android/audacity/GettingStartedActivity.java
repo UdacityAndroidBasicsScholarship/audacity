@@ -1,4 +1,4 @@
-package com.example.android.loginusingsqlite;
+package com.example.android.audacity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
