@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Login Using SQlite</string>
-    <string name="please_enter_username">Please enter username</string>
-    <string name="please_enter_password">Please Enter Password</string>
+    <string name="please_enter_username">Username</string>
+    <string name="please_enter_password">Password</string>
     <string name="logo">Logo</string>
-    <string name="new_user">New User?</string>
-    <string name="sign_up_now">Sign Up Now!</string>
+    <string name="sign_up_now">NOT ONE OF US ? CREATE ACCOUNT</string>
     <string name="enter_name">Enter Name</string>
     <string name="enter_username">Enter Username</string>
     <string name="enter_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="warning_loginaccount">USERNAME FIELD SHOULD NOT BE EMPTY</string>
 </resources>
