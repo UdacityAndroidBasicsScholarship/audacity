@@ -11,15 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name="com.example.android.audacity.MainActivity">
+        <activity android:name="com.example.android.audacity.MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.audacity.SignupActivity" />
-        <activity android:name="com.example.android.audacity.GettingStartedActivity"></activity>
+        <activity android:name="com.example.android.audacity.SignupActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name="com.example.android.audacity.GettingStartedActivity"
+            android:launchMode="singleTop"></activity>
     </application>
 
 </manifest>
