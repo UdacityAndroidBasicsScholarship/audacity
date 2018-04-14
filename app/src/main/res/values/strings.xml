@@ -9,4 +9,8 @@
     <string name="enter_username">Enter Username</string>
     <string name="enter_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="category_1">Hottest App Of The Day</string>
+    <string name="category_2">Challenges</string>
+    <string name="category_3">Discussions</string>
+    <string name="category_4">Results</string>
 </resources>

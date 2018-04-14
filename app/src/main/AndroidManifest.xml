@@ -11,15 +11,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name="com.example.android.audacity.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.audacity.SignupActivity" />
-        <activity android:name="com.example.android.audacity.GettingStartedActivity"></activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".GettingStartedActivity" />
+        <activity
+            android:name=".HAOD"
+            android:label="@string/category_1"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".challenges"
+            android:theme="@style/AppTheme"
+            android:label="@string/category_2"/>
+        <activity android:name=".Discussions"
+            android:theme="@style/AppTheme"
+            android:label="@string/category_3"/>
+        <activity android:name=".Results"
+            android:theme="@style/AppTheme"
+            android:label="@string/category_4"></activity>
     </application>
 
 </manifest>
