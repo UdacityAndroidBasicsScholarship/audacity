@@ -9,4 +9,7 @@
     <string name="enter_username">Enter Username</string>
     <string name="enter_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="Login">Already a User? Sign In</string>
+    <string name="Logout">LogOut</string>
+    <string name="gettingstarted">Getting Started!!</string
 </resources>
