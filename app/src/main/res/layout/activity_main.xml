@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/grade"
@@ -22,6 +21,7 @@
         android:contentDescription="@string/logo" />
 
     <EditText
+        android:inputType="text"
         android:id="@+id/usernameLogin"
         android:layout_width="match_parent"
         android:layout_centerInParent="true"
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sign_up_details"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/passwordLogin"
         android:textColor="#afefef"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sign_up_now"
         android:id="@+id/sign_up_link"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:onClick="sign_up_page"
         android:layout_below="@id/sign_up_details"
         android:layout_centerHorizontal="true"
