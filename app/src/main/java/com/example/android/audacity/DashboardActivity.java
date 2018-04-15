@@ -38,7 +38,7 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         if (mFirebaseAuth == null) {
-            startActivity(new Intent(this, DashboardActivity.class));
+            startActivity(new Intent(this, LoginActivity.class));
             finish();
 
         }
