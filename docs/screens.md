@@ -18,4 +18,4 @@
 </div>
 
 
-`remaining will be updated soon...  and suggestions for improvements are always . Theme colour is just reference we will change later `
+`remaining will be updated soon...  and suggestions for improvements are always welcome . Theme colour is just reference we will change later `
