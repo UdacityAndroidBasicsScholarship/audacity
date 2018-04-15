@@ -6,7 +6,7 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
 <ol>
   <li>Hottest App Of The Day</li>
   <li>Challenges</li>
-  <li>Discussions</li>
+  <li>Quizzes</li>
   <li>Results</li>
 </ol>
 
