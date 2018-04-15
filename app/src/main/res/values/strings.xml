@@ -9,4 +9,6 @@
     <string name="enter_username">Enter Username</string>
     <string name="enter_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="get_started">Get Started</string>
+    <string name="logout">Logout</string>
 </resources>
