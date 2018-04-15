@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Get Started"
-        android:textSize="25dp" />
+        android:text="@string/get_started"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/logout"
@@ -22,7 +22,7 @@
         android:layout_below="@id/profile"
         android:layout_margin = "26dp"
         android:layout_centerHorizontal="true"
-        android:text="Logout" />
+        android:text="@string/logout" />
 
 
 </RelativeLayout>
