@@ -17,11 +17,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
+public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText Username;
     private EditText Password;
-    private Button signup;
+    private Button signUp;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
 
@@ -35,20 +35,20 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         progressDialog = new ProgressDialog(this);
         Username = findViewById(R.id.username);
         Password = findViewById(R.id.password);
-        signup = findViewById(R.id.sign_up);
-        signup.setOnClickListener(this);
+        signUp = findViewById(R.id.sign_up_button);
+        signUp.setOnClickListener(this);
 
     }
 
     public void login_page(View view) {
-        Intent login = new Intent(SignupActivity.this, MainActivity.class);
+        Intent login = new Intent(SignUpActivity.this, MainActivity.class);
         startActivity(login);
         finish();
     }
 
     @Override
     public void onClick(View view) {
-        if(view == signup){
+        if(view == signUp){
             registerUser();
         }
     }
@@ -58,11 +58,11 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         String password = Password.getText().toString().trim();
 
         if(TextUtils.isEmpty(username)){
-            Toast.makeText(SignupActivity.this, "Please enter a valid username", Toast.LENGTH_SHORT).show();
+            Toast.makeText(SignUpActivity.this, "Please enter a valid username", Toast.LENGTH_SHORT).show();
             return ;
         }
         if (TextUtils.isEmpty(password)){
-            Toast.makeText(SignupActivity.this, "Please enter a valid(text) password", Toast.LENGTH_SHORT).show();
+            Toast.makeText(SignUpActivity.this, "Please enter a valid(text) password", Toast.LENGTH_SHORT).show();
             return ;
         }
         progressDialog.setMessage("Registering User....");
@@ -73,12 +73,12 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()){
-                    Toast.makeText(SignupActivity.this, "Registration Successful!", Toast.LENGTH_LONG).show();
-                    Intent start = new Intent(SignupActivity.this, GettingStartedActivity.class);
+                    Toast.makeText(SignUpActivity.this, "Registration Successful!", Toast.LENGTH_LONG).show();
+                    Intent start = new Intent(SignUpActivity.this, GettingStartedActivity.class);
                     startActivity(start);
                     finish();
                 } else{
-                    Toast.makeText(SignupActivity.this, "Could not register try again", Toast.LENGTH_LONG).show();
+                    Toast.makeText(SignUpActivity.this, "Could not register try again", Toast.LENGTH_LONG).show();
                     Log.w("Error signup", "signInWithEmail:failure", task.getException());
                 }
 

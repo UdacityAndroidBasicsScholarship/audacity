@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">Audacity</string>
-    <string name="please_enter_username">Please enter username</string>
-    <string name="please_enter_password">Please Enter Password</string>
-    <string name="logo">Logo</string>
-    <string name="new_user">New User?</string>
+    <string name="please_enter_username">Login username</string>
+    <string name="please_enter_password">Login password</string>
+    <string name="logo">Community logo</string>
+    <string name="new_user">New to Audacity Community?</string>
+    <string name="already_user">Already a User? Login</string>
+    <string name="sign_up">Sign Up!</string>
     <string name="sign_up_now">Sign Up Now!</string>
     <string name="enter_name">Enter Name</string>
-    <string name="enter_username">Enter Username</string>
-    <string name="enter_password">Enter Password</string>
-    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_username">Enter desired username</string>
+    <string name="enter_password">Enter new password</string>
+    <string name="confirm_password">Confirm your password</string>
 </resources>
