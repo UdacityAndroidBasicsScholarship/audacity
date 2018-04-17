@@ -6,14 +6,14 @@ package com.example.android.audacity;
 
 ///This class is for the Model of data which we will use in recycler view
     ///this class will e used to fetch from database in future
-public class RecyclerViewHelperClass {
+public class RecyclerViewHelper {
 
     private int profileIcon;
     private String mHeader, mStudentName, mDateCreated;
 
 
     //Constructor for setting
-    public RecyclerViewHelperClass(int profileIcon, String header, String studentName, String dateCreated){
+    public RecyclerViewHelper(int profileIcon, String header, String studentName, String dateCreated){
 
         this.profileIcon = profileIcon;
         mHeader = header;

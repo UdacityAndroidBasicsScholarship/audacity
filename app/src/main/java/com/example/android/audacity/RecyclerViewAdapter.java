@@ -14,9 +14,9 @@ import java.util.List;
  * Created by acer on 17-04-2018.
  */
 
-public class RecyclerAdapterClass extends RecyclerView.Adapter<RecyclerAdapterClass.MyViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
-    private List<RecyclerViewHelperClass> listItems;
+    private List<RecyclerViewHelper> listItems;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView headerTextView, nameTextView, dateTextView;
@@ -33,7 +33,7 @@ public class RecyclerAdapterClass extends RecyclerView.Adapter<RecyclerAdapterCl
     }//end of internal class
 
     //constructor for outer class
-    public RecyclerAdapterClass(List<RecyclerViewHelperClass> listItems) {
+    public RecyclerViewAdapter(List<RecyclerViewHelper> listItems) {
         this.listItems = listItems;
     }
 
@@ -48,7 +48,7 @@ public class RecyclerAdapterClass extends RecyclerView.Adapter<RecyclerAdapterCl
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        RecyclerViewHelperClass currentItem = listItems.get(position);
+        RecyclerViewHelper currentItem = listItems.get(position);
         holder.profilePhoto.setImageResource(currentItem.getProfileIcon());
         holder.headerTextView.setText(currentItem.getmHeader());
         holder.nameTextView.setText(currentItem.getmStudentName());
