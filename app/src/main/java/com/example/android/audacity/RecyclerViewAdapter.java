@@ -18,25 +18,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private List<RecyclerViewHelper> listItems;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView headerTextView, nameTextView, dateTextView;
-        public ImageView profilePhoto;
-
-        //inner class consructor
-        public MyViewHolder(View view) {
-            super(view);
-            profilePhoto = (ImageView) view.findViewById(R.id.profile_icon_imageview);
-            headerTextView = (TextView) view.findViewById(R.id.header_textview);
-            nameTextView = (TextView) view.findViewById(R.id.name_textiew);
-            dateTextView = (TextView) view.findViewById(R.id.date_textview);
-        }
-    }//end of internal class
-
     //constructor for outer class
     public RecyclerViewAdapter(List<RecyclerViewHelper> listItems) {
         this.listItems = listItems;
     }
-
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -59,4 +44,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public int getItemCount() {
         return listItems.size();
     }
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView headerTextView, nameTextView, dateTextView;
+        public ImageView profilePhoto;
+
+        //inner class consructor
+        public MyViewHolder(View view) {
+            super(view);
+            profilePhoto = (ImageView) view.findViewById(R.id.profile_icon_imageview);
+            headerTextView = (TextView) view.findViewById(R.id.header_textview);
+            nameTextView = (TextView) view.findViewById(R.id.name_textiew);
+            dateTextView = (TextView) view.findViewById(R.id.date_textview);
+        }
+    }//end of internal class
 }

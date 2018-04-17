@@ -44,11 +44,11 @@ public class QuizzesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=  inflater.inflate(R.layout.fragment_quizzes, container, false);
+        View view = inflater.inflate(R.layout.fragment_quizzes, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        mTextViewEmpty = (TextView)view.findViewById(R.id.textViewEmpty);
-        mImageViewEmpty = (ImageView)view.findViewById(R.id.imageViewEmpty);
-        mProgressBarLoading = (ProgressBar)view.findViewById(R.id.progressBarLoading);
+        mTextViewEmpty = (TextView) view.findViewById(R.id.textViewEmpty);
+        mImageViewEmpty = (ImageView) view.findViewById(R.id.imageViewEmpty);
+        mProgressBarLoading = (ProgressBar) view.findViewById(R.id.progressBarLoading);
         prepareFakeData();
         final LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -65,79 +65,75 @@ public class QuizzesFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
     }
 
-    public void prepareFakeData(){
-        RecyclerViewHelper item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+    public void prepareFakeData() {
+        RecyclerViewHelper item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile,"Activity Number 1","Dont know","12-12-12");
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
         myList.add(item);
-
-
-
-
 
 
     }

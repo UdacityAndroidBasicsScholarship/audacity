@@ -3,4 +3,7 @@
     <color name="colorPrimary">#03a9f4</color>
     <color name="colorPrimaryDark">#0288D1</color>
     <color name="colorAccent">#448AFF</color>
-</resources>
+
+    <!--for home background-->
+    <color name="faint_grey">#dddddd</color>
+    </resources>

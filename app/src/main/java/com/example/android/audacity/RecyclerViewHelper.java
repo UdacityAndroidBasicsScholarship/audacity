@@ -5,7 +5,7 @@ package com.example.android.audacity;
  */
 
 ///This class is for the Model of data which we will use in recycler view
-    ///this class will e used to fetch from database in future
+///this class will e used to fetch from database in future
 public class RecyclerViewHelper {
 
     private int profileIcon;
@@ -13,7 +13,7 @@ public class RecyclerViewHelper {
 
 
     //Constructor for setting
-    public RecyclerViewHelper(int profileIcon, String header, String studentName, String dateCreated){
+    public RecyclerViewHelper(int profileIcon, String header, String studentName, String dateCreated) {
 
         this.profileIcon = profileIcon;
         mHeader = header;
@@ -21,17 +21,39 @@ public class RecyclerViewHelper {
         mDateCreated = dateCreated;
     }
 
-//some getters
+    //some getters
     //i have considered integer value for image because image id is integer
-    public int getProfileIcon(){return profileIcon;}
-    public String getmHeader(){return mHeader;}
-    public String getmStudentName(){return mStudentName;}
-    public String getmDateCreated(){return mDateCreated;}
+    public int getProfileIcon() {
+        return profileIcon;
+    }
 
     //setters
-    public void setProfileIcon(int profileIcon){this.profileIcon = profileIcon;}
-    public void setmHeader(String header){mHeader = header;}
-    public void setmStudentName(String studentName){mStudentName = studentName;}
-    public void setmDateCreated(String dateCreated){mDateCreated = dateCreated;}
+    public void setProfileIcon(int profileIcon) {
+        this.profileIcon = profileIcon;
+    }
+
+    public String getmHeader() {
+        return mHeader;
+    }
+
+    public void setmHeader(String header) {
+        mHeader = header;
+    }
+
+    public String getmStudentName() {
+        return mStudentName;
+    }
+
+    public void setmStudentName(String studentName) {
+        mStudentName = studentName;
+    }
+
+    public String getmDateCreated() {
+        return mDateCreated;
+    }
+
+    public void setmDateCreated(String dateCreated) {
+        mDateCreated = dateCreated;
+    }
 
 }
