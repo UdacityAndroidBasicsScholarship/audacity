@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.wang.avi.AVLoadingIndicatorView;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -35,11 +37,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private SignInButton googleSignInButton;
     private GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN = 1012;
+    private AVLoadingIndicatorView avLoadingIndicatorView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        avLoadingIndicatorView = findViewById(R.id.avi);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -56,15 +61,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         googleSignInButton = findViewById(R.id.google_sign_in_button);
         googleSignInButton.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.google_sign_in_button) {
+            avLoadingIndicatorView.setVisibility(View.VISIBLE);
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
+                    WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
             doLogin();
         }
     }
+
 
     private void doLogin() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
@@ -103,6 +113,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        avLoadingIndicatorView.setVisibility(View.INVISIBLE);
+                        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
