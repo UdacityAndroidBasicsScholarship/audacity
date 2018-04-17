@@ -9,6 +9,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -25,11 +28,15 @@ import com.example.android.audacity.fragments.ResultsFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = DashboardActivity.class.getSimpleName();
     private DrawerLayout mDrawer;
     private NavigationView mNavigationView;
     private FirebaseAuth mFirebaseAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +70,11 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
             userProfileEmail.setText(mFirebaseAuth.getCurrentUser().getEmail());
             String imagePath = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
             if (imagePath != null) {
-                    Glide.with(this).load(imagePath).into(userProfileImage);
+                Glide.with(this).load(imagePath).into(userProfileImage);
             }
 
         }
+
     }
 
     private void setHomeFragment() {
@@ -152,3 +160,4 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         return super.onOptionsItemSelected(item);
     }
 }
+
