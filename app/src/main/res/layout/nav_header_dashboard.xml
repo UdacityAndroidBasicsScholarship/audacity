@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/colorPrimary">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_image_IV"
+        android:layout_width="@dimen/profile_img_width"
+        android:layout_height="@dimen/profile_img_height"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/user_profile_name_TV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/user_profile_name_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/user_profile_email_TV"
+        app:layout_constraintEnd_toEndOf="@+id/user_profile_email_TV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_profile_email_TV"
+        tools:text="UserName" />
+
+    <TextView
+        android:id="@+id/user_profile_email_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="UserEmail@gmail.com" />
+</android.support.constraint.ConstraintLayout>
