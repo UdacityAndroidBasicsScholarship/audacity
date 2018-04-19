@@ -1,13 +1,103 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.audacity.fragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <!--Hottest App of the Day-->
+        <include
+            android:id="@+id/home_card_heading_hottest_app"
+            style="@style/HeadingSpacing"
+            layout="@layout/card_headings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/home_card_hottest_app"
+            style="@style/CardSpacing"
+            layout="@layout/home_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_card_heading_hottest_app" />
+
+        <!--Challenges-->
+        <include
+            android:id="@+id/home_card_heading_challenges"
+            style="@style/HeadingSpacing"
+            layout="@layout/card_headings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_card_hottest_app" />
+
+        <include
+            android:id="@+id/home_card_challenges"
+            style="@style/CardSpacing"
+            layout="@layout/home_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_card_heading_challenges" />
+
+        <!--Quizzes-->
+        <include
+            android:id="@+id/home_card_heading_quizzes"
+            style="@style/HeadingSpacing"
+            layout="@layout/card_headings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_card_challenges" />
+
+        <include
+            android:id="@+id/home_card_quizes"
+            style="@style/CardSpacing"
+            layout="@layout/home_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_card_heading_quizzes" />
+
+        <!--Results-->
+        <include
+            android:id="@+id/home_card_heading_results"
+            style="@style/HeadingSpacing"
+            layout="@layout/card_headings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_card_quizes" />
+
+        <include
+            android:id="@+id/home_card_results"
+            style="@style/CardSpacing"
+            layout="@layout/home_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_card_heading_results" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
