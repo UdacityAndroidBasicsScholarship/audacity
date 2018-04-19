@@ -14,8 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.android.audacity.R;
-import com.example.android.audacity.RecyclerViewAdapter;
-import com.example.android.audacity.RecyclerViewHelper;
+import com.example.android.audacity.utils.RecyclerViewAdapter;
+import com.example.android.audacity.utils.RecyclerViewHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,8 +54,8 @@ public class HottestAppFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         mAdapter = new RecyclerViewAdapter(myList);
         recyclerView.setAdapter(mAdapter);
-        return view;    }
-
+        return view;
+    }
 
 
     public void prepareFakeData() {
@@ -63,14 +63,6 @@ public class HottestAppFragment extends Fragment {
         myList.add(item);
         item = new RecyclerViewHelper(R.drawable.profile, "App Name", "Dont know", "12-12-12");
         myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "App Name", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "App Name", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "App Name", "Dont know", "12-12-12");
-        myList.add(item);
-
-
     }
 
 }

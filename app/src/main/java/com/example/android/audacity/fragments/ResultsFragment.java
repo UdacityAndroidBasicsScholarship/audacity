@@ -14,8 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.android.audacity.R;
-import com.example.android.audacity.RecyclerViewAdapter;
-import com.example.android.audacity.RecyclerViewHelper;
+import com.example.android.audacity.utils.RecyclerViewAdapter;
+import com.example.android.audacity.utils.RecyclerViewHelper;
 
 import java.util.ArrayList;
 import java.util.List;

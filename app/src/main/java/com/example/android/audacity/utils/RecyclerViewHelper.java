@@ -1,4 +1,4 @@
-package com.example.android.audacity;
+package com.example.android.audacity.utils;
 
 /**
  * Created by acer on 17-04-2018.
@@ -21,13 +21,11 @@ public class RecyclerViewHelper {
         mDateCreated = dateCreated;
     }
 
-    //some getters
+    //some getters & setters
     //i have considered integer value for image because image id is integer
     public int getProfileIcon() {
         return profileIcon;
     }
-
-    //setters
     public void setProfileIcon(int profileIcon) {
         this.profileIcon = profileIcon;
     }
@@ -35,7 +33,6 @@ public class RecyclerViewHelper {
     public String getmHeader() {
         return mHeader;
     }
-
     public void setmHeader(String header) {
         mHeader = header;
     }
@@ -43,7 +40,6 @@ public class RecyclerViewHelper {
     public String getmStudentName() {
         return mStudentName;
     }
-
     public void setmStudentName(String studentName) {
         mStudentName = studentName;
     }
@@ -51,7 +47,6 @@ public class RecyclerViewHelper {
     public String getmDateCreated() {
         return mDateCreated;
     }
-
     public void setmDateCreated(String dateCreated) {
         mDateCreated = dateCreated;
     }
