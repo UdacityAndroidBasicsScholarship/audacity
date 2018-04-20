@@ -61,7 +61,6 @@ public class ResultsFragment extends Fragment {
         item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "13-13-19");
         myList.add(item);
 
-
     }
 
 }

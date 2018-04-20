@@ -2,152 +2,347 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/faint_grey"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="@dimen/dimen_16dp"
     tools:context="com.example.android.audacity.fragments.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
+        android:padding="@dimen/dimen_16dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <!--hottest app section-->
-        <RelativeLayout
-
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_8dp">
-
+            android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/hottest_app_of_the_day_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hottest_app_of_the_day"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:text="Hottest App Of The Day!"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
             <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="View All"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="@string/view_all"
-                android:textStyle="bold" />
-
-            <include
-                android:id="@+id/hottest_app_of_the_day_container"
-                layout="@layout/default_list_item"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/hottest_app_of_the_day_textview"
-                android:layout_margin="@dimen/dimen_8dp"
-                android:layout_marginTop="@dimen/dimen_8dp" />
-
-
-        </RelativeLayout>
-
-        <!--Challenges section-->
-        <RelativeLayout
-
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--<View-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"/>-->
+        <android.support.v7.widget.CardView
+            android:layout_margin="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_8dp">
+            android:layout_height="80dp"
+            android:foreground="?attr/selectableItemBackground"
+            card_view:cardCornerRadius="@dimen/dimen_8dp">
 
-            <TextView
-                android:id="@+id/challenges_textview"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/challenges"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="@string/view_all"
-                android:textStyle="bold" />
-
-            <include
-                layout="@layout/default_list_item"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/challenges_textview"
-                android:layout_margin="@dimen/dimen_8dp"
-                android:layout_marginTop="@dimen/dimen_8dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/appIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:src="@mipmap/ic_launcher" />
 
 
-        </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/appIcon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_16dp">
 
-        <!--Quizzes section-->
-        <RelativeLayout
+                    <TextView
+                        android:id="@+id/appTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App Name 1"
+                        android:textStyle="bold" />
 
+                    <TextView
+                        android:id="@+id/appSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Developed By - Developer 1" />
+
+                    <TextView
+                        android:id="@+id/appDatePosted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18/04/2018" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:src="@drawable/right_arrow" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_8dp">
-
+            android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/quiz_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/quizzes"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:text="Challenges"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
             <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="View All"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="@string/view_all"
-                android:textStyle="bold" />
-
-            <include
-                android:id="@+id/hottest_app_of_the_day_container"
-                layout="@layout/default_list_item"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/quiz_textview"
-                android:layout_margin="@dimen/dimen_8dp"
-                android:layout_marginTop="@dimen/dimen_8dp" />
-
-
-        </RelativeLayout>
-
-        <!--Results section-->
-        <RelativeLayout
-
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--<View-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"/>-->
+        <android.support.v7.widget.CardView
+            android:layout_margin="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_8dp">
+            android:layout_height="80dp"
+            android:foreground="?attr/selectableItemBackground"
+            card_view:cardCornerRadius="@dimen/dimen_8dp">
 
-            <TextView
-                android:id="@+id/results_textview"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/results"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:layout_height="match_parent">
 
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/challengeIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:src="@mipmap/ic_launcher" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/challengeIcon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_16dp">
+
+                    <TextView
+                        android:id="@+id/challengeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Challange 1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/challengeSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Challengo!!" />
+
+                    <TextView
+                        android:id="@+id/challengeDatePosted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18/04/2018" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:src="@drawable/right_arrow" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:text="Quizzes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="View All"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="@string/view_all"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--<View-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"/>-->
+        <android.support.v7.widget.CardView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:foreground="?attr/selectableItemBackground"
+            card_view:cardCornerRadius="@dimen/dimen_8dp">
 
-            <include
-                android:id="@+id/hottest_app_of_the_day_container"
-                layout="@layout/default_list_item"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/quizIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:src="@mipmap/ic_launcher" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/quizIcon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_16dp">
+
+                    <TextView
+                        android:id="@+id/quizTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quiz 1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/quizSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Play The Best Quiz" />
+
+                    <TextView
+                        android:id="@+id/datePosted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18/04/2018" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:src="@drawable/right_arrow" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:text="Results"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="View All"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/results_textview"
-                android:layout_margin="@dimen/dimen_8dp"
-                android:layout_marginTop="@dimen/dimen_8dp" />
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--<View-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"/>-->
+        <android.support.v7.widget.CardView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:foreground="?attr/selectableItemBackground"
+            card_view:cardCornerRadius="@dimen/dimen_8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/resultIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:src="@mipmap/ic_launcher" />
 
 
-        </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/resultIcon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_16dp">
 
+                    <TextView
+                        android:id="@+id/resultTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quiz 1 Result"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/resultSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Score -  100/200" />
+
+                    <TextView
+                        android:id="@+id/resultDatePosted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18/04/2018" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:src="@drawable/right_arrow" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 </ScrollView>

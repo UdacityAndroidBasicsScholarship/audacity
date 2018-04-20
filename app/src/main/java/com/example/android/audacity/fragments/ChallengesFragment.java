@@ -16,6 +16,8 @@ import android.widget.TextView;
 import com.example.android.audacity.R;
 import com.example.android.audacity.RecyclerViewAdapter;
 import com.example.android.audacity.RecyclerViewHelper;
+import com.example.android.audacity.adapters.ChallengeAdapter;
+import com.example.android.audacity.models.ChallengeItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,9 +28,10 @@ import java.util.List;
 public class ChallengesFragment extends Fragment {
 
     //recycler view utilities
-    private List<RecyclerViewHelper> myList = new ArrayList<>();
+    private ArrayList<ChallengeItem> items = new ArrayList<>();
     private RecyclerView recyclerView;
-    private RecyclerViewAdapter mAdapter;
+    //private RecyclerViewAdapter mAdapter;
+    private ChallengeAdapter challengeAdapter;
     private TextView mTextViewEmpty;
     private ImageView mImageViewEmpty;
     private ProgressBar mProgressBarLoading;
@@ -52,77 +55,18 @@ public class ChallengesFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        mAdapter = new RecyclerViewAdapter(myList);
-        recyclerView.setAdapter(mAdapter);
+        challengeAdapter=new ChallengeAdapter(items);
+        recyclerView.setAdapter(challengeAdapter);
+        //mAdapter = new RecyclerViewAdapter(myList);
+        //recyclerView.setAdapter(mAdapter);
         return view;
 
 
     }
     public void prepareFakeData() {
-        RecyclerViewHelper item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
-        myList.add(item);
-
-
-
-
+        for(int i=0;i<10;++i){
+            items.add(new ChallengeItem(R.drawable.profile,"Challenge "+(i+1),"Challenging The Challenge","20/04/2018"));
+        }
     }
 
 }

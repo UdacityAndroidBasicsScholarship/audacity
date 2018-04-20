@@ -18,6 +18,8 @@ import android.widget.TextView;
 import com.example.android.audacity.R;
 import com.example.android.audacity.RecyclerViewAdapter;
 import com.example.android.audacity.RecyclerViewHelper;
+import com.example.android.audacity.adapters.QuizAdapter;
+import com.example.android.audacity.models.QuizItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,9 +30,9 @@ import java.util.List;
 public class QuizzesFragment extends Fragment {
 
     //recycler view utilities
-    private List<RecyclerViewHelper> myList = new ArrayList<>();
+    private ArrayList<QuizItem> items = new ArrayList<>();
     private RecyclerView recyclerView;
-    private RecyclerViewAdapter mAdapter;
+    private QuizAdapter quizAdapter;
     private TextView mTextViewEmpty;
     private ImageView mImageViewEmpty;
     private ProgressBar mProgressBarLoading;
@@ -54,8 +56,8 @@ public class QuizzesFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        mAdapter = new RecyclerViewAdapter(myList);
-        recyclerView.setAdapter(mAdapter);
+        quizAdapter=new QuizAdapter(items);
+        recyclerView.setAdapter(quizAdapter);
         return view;
 
     }
@@ -66,76 +68,9 @@ public class QuizzesFragment extends Fragment {
     }
 
     public void prepareFakeData() {
-        RecyclerViewHelper item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
-        myList.add(item);
-
-
+        for(int i=0;i<10;++i){
+            items.add(new QuizItem(R.drawable.profile,"Quiz "+(i+1),"The Best Quiz Ever","20/04/2018"));
+        }
     }
 }
 
