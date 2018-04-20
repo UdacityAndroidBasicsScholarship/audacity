@@ -31,7 +31,7 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
 
 ## Contributors
 All Google Udacity Andriod Basics Scholars are eligible to Contribute.
-Please Read The Contributing Guide <a href="https://github.com/UdacityAndroidBasicsScholarship/audacity/blob/branch2/contributing.md"> Here </a>
+Please Read The Contributing Guide <a href="https://github.com/UdacityAndroidBasicsScholarship/audacity/blob/master/CONTRIBUTING.md"> Here </a>
 
 ## How You Can Contribute? ##
 ### Creating a Fork
