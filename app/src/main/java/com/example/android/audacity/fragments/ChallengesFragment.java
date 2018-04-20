@@ -14,10 +14,15 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.android.audacity.R;
+<<<<<<< HEAD
 import com.example.android.audacity.RecyclerViewAdapter;
 import com.example.android.audacity.RecyclerViewHelper;
 import com.example.android.audacity.adapters.ChallengeAdapter;
 import com.example.android.audacity.models.ChallengeItem;
+=======
+import com.example.android.audacity.utils.RecyclerViewAdapter;
+import com.example.android.audacity.utils.RecyclerViewHelper;
+>>>>>>> 2936cf569da0fea49b01c5a1ff2b48658fb7803e
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,9 +69,18 @@ public class ChallengesFragment extends Fragment {
 
     }
     public void prepareFakeData() {
+<<<<<<< HEAD
         for(int i=0;i<10;++i){
             items.add(new ChallengeItem(R.drawable.profile,"Challenge "+(i+1),"Challenging The Challenge","20/04/2018"));
         }
+=======
+        RecyclerViewHelper item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
+        myList.add(item);
+        item = new RecyclerViewHelper(R.drawable.profile, "Challenge Number 1", "Cant Tell", "12-12-12");
+        myList.add(item);
+
+
+>>>>>>> 2936cf569da0fea49b01c5a1ff2b48658fb7803e
     }
 
 }

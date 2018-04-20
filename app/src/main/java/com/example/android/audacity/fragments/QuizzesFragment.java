@@ -16,10 +16,15 @@ import android.widget.TextView;
 
 
 import com.example.android.audacity.R;
+<<<<<<< HEAD
 import com.example.android.audacity.RecyclerViewAdapter;
 import com.example.android.audacity.RecyclerViewHelper;
 import com.example.android.audacity.adapters.QuizAdapter;
 import com.example.android.audacity.models.QuizItem;
+=======
+import com.example.android.audacity.utils.RecyclerViewAdapter;
+import com.example.android.audacity.utils.RecyclerViewHelper;
+>>>>>>> 2936cf569da0fea49b01c5a1ff2b48658fb7803e
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,9 +73,18 @@ public class QuizzesFragment extends Fragment {
     }
 
     public void prepareFakeData() {
+<<<<<<< HEAD
         for(int i=0;i<10;++i){
             items.add(new QuizItem(R.drawable.profile,"Quiz "+(i+1),"The Best Quiz Ever","20/04/2018"));
         }
+=======
+        RecyclerViewHelper item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
+        myList.add(item);
+        item = new RecyclerViewHelper(R.drawable.profile, "Activity Number 1", "Dont know", "12-12-12");
+        myList.add(item);
+
+
+>>>>>>> 2936cf569da0fea49b01c5a1ff2b48658fb7803e
     }
 }
 
