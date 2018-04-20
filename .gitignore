@@ -64,6 +64,9 @@ obj/
 
 # User-specific configurations
 .idea
+.gradle
+/local.properties
+/.idea
 .idea/caches/
 .idea/libraries/
 .idea/shelf/

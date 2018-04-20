@@ -2,5 +2,12 @@
 <resources>
     <color name="colorPrimary">#03a9f4</color>
     <color name="colorPrimaryDark">#0288D1</color>
+
+
+    <!--for home background-->
+    <color name="faint_grey">#dddddd</color>
+    </resources>
+
     <color name="colorAccent">#FF5722</color>
 </resources>
+
