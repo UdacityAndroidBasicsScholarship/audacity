@@ -67,7 +67,7 @@
             app:layout_constraintTop_toBottomOf="@id/home_card_challenges" />
 
         <include
-            android:id="@+id/home_card_quizes"
+            android:id="@+id/home_card_quizzes"
             style="@style/CardSpacing"
             layout="@layout/home_card_layout"
             android:layout_width="match_parent"
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_card_quizes" />
+            app:layout_constraintTop_toBottomOf="@id/home_card_quizzes" />
 
         <include
             android:id="@+id/home_card_results"
