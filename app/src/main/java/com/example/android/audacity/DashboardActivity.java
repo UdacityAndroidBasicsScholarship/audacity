@@ -38,9 +38,7 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         if (mFirebaseAuth == null) {
-            startActivity(new Intent(this, LoginActivity.class));
-            finish();
-
+            navigateToLogin();
         }
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -141,14 +139,18 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
             case R.id.nav_sign_out:
                 if (mFirebaseAuth != null) {
                     mFirebaseAuth.signOut();
-                    Intent intent1 = new Intent(DashboardActivity.this, LoginActivity.class);
-                    startActivity(intent1);
-                    finish();
+                    navigateToLogin();
                 }
                 break;
             default:
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void navigateToLogin() {
+        Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

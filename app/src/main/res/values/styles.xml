@@ -8,7 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_theme</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" >
         <item name="colorControlNormal">@android:color/white</item>
     </style>
 
