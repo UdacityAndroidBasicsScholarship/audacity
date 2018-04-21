@@ -22,9 +22,6 @@ import com.example.android.audacity.fragments.HomeFragment;
 import com.example.android.audacity.fragments.HottestAppFragment;
 import com.example.android.audacity.fragments.QuizzesFragment;
 import com.example.android.audacity.fragments.ResultsFragment;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -33,8 +30,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
     private DrawerLayout mDrawer;
     private NavigationView mNavigationView;
     private FirebaseAuth mFirebaseAuth;
-    private GoogleSignInOptions gso;
-    private GoogleSignInClient mGoogleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,14 +40,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         if (mFirebaseAuth == null) {
             navigateToLogin();
         }
-
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build();
-
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mDrawer = findViewById(R.id.drawer_layout);
@@ -151,7 +138,6 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
                 break;
             case R.id.nav_sign_out:
                 if (mFirebaseAuth != null) {
-                    mGoogleSignInClient.signOut();
                     mFirebaseAuth.signOut();
                     navigateToLogin();
                 }
