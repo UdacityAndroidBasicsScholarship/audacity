@@ -1,2 +1,5 @@
 /build
 .idea
+/gradlew
+*.bat
+*.properties
