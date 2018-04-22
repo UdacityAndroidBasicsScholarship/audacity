@@ -56,5 +56,7 @@ dependencies {
     //ButterKnife for efficient view binding, to prevent memory leaks and several findViewById calls
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Any third party lib will go here with separate description
 }
 apply plugin: 'com.google.gms.google-services'
