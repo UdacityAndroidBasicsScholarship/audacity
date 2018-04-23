@@ -1,7 +1,9 @@
 package com.example.android.audacity;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,11 +37,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private SignInButton googleSignInButton;
     private GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN = 1012;
+    private ConstraintLayout myBg;
+    AnimationDrawable animationDrawable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        myBg = findViewById(R.id.myBg);
+
+        animationDrawable = (AnimationDrawable) myBg.getBackground();
+        animationDrawable.setEnterFadeDuration(2500);
+        animationDrawable.setExitFadeDuration(2500);
+        animationDrawable.start();
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
