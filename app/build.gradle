@@ -48,7 +48,15 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation "com.android.support:appcompat-v7:27.1.1"
     implementation "com.android.support:support-annotations:27.1.1"
+
+    //Glide for efficient image loading
     implementation 'com.github.bumptech.glide:glide:4.7.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    //ButterKnife for efficient view binding, to prevent memory leaks and several findViewById calls
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Any third party implementation/dependency will go here with separate description for each like above
 }
 apply plugin: 'com.google.gms.google-services'
