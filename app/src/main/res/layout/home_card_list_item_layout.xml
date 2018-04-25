@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/home_card_heading"
@@ -17,7 +17,7 @@
         tools:text="Hottest app of the Day" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/view_all_textview"
         style="@style/CategorySubHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

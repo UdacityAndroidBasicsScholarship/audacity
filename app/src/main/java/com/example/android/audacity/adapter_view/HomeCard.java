@@ -4,9 +4,18 @@ package com.example.android.audacity.adapter_view;
 public class HomeCard {
     private String mHomeCardHeading, mHomeCardTitle, mHomeCardAuthor, mHomeCardDate;
 
+    //For Home Fragment
     public HomeCard(String HomeCardHeading, String HomeCardTitle, String HomeCardAuthor,
                     String HomeCardDate) {
         mHomeCardHeading = HomeCardHeading;
+        mHomeCardTitle = HomeCardTitle;
+        mHomeCardAuthor = HomeCardAuthor;
+        mHomeCardDate = HomeCardDate;
+    }
+
+    //For Other Individual Fragments
+    public HomeCard(String HomeCardTitle, String HomeCardAuthor,
+                    String HomeCardDate) {
         mHomeCardTitle = HomeCardTitle;
         mHomeCardAuthor = HomeCardAuthor;
         mHomeCardDate = HomeCardDate;
