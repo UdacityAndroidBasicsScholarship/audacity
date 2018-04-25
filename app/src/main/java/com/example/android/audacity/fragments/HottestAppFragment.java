@@ -26,6 +26,7 @@ public class HottestAppFragment extends Fragment {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private List<HomeCard> cards;
+
     public HottestAppFragment() {
         // Required empty public constructor
     }
@@ -52,55 +53,12 @@ public class HottestAppFragment extends Fragment {
 
     private List<HomeCard> generateDummyData() {
         cards = new ArrayList<>();
-        cards.add(new HomeCard(
-                "App Name 1",
-                "Student Name",
-                "Posted On 20-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 2",
-                "Student Name",
-                "Posted On 19-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 3",
-                "Student Name",
-                "Posted On 18-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 4",
-                "Student Name",
-                "Posted On 17-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 5",
-                "Student Name",
-                "Posted On 16-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 6",
-                "Student Name",
-                "Posted On 15-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 7",
-                "Student Name",
-                "Posted On 14-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 8",
-                "Student Name",
-                "Posted On 13-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 9",
-                "Student Name",
-                "Posted On 12-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 10",
-                "Student Name",
-                "Posted On 11-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 11",
-                "Student Name",
-                "Posted On 10-04-2018"));
-        cards.add(new HomeCard(
-                "App Name 12",
-                "Student Name",
-                "Posted On 09-04-2018"));
-
+        for (int i = 1; i < 13; i++) {
+            cards.add(new HomeCard(
+                    "App Name " + i,
+                    "Student Name",
+                    "Posted On " + String.valueOf(21 - i) + "-04-2018"));
+        }
         return cards;
     }
 }
