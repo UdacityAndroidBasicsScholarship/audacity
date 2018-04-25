@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.example.android.audacity.R;
 import com.example.android.audacity.adapter_view.FragmentsAdapter;
-import com.example.android.audacity.adapter_view.HomeCard;
+import com.example.android.audacity.adapter_view.Card;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class QuizzesFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private List<HomeCard> cards;
+    private List<Card> cards;
 
     public QuizzesFragment() {
         // Required empty public constructor
@@ -51,10 +51,10 @@ public class QuizzesFragment extends Fragment {
         return rootView;
     }
 
-    private List<HomeCard> generateDummyData() {
+    private List<Card> generateDummyData() {
         cards = new ArrayList<>();
         for (int i = 1; i < 13; i++) {
-            cards.add(new HomeCard(
+            cards.add(new Card(
                     "Quiz Name " + i,
                     "Moderator Name",
                     "Posted On " + String.valueOf(21 - i) + "-04-2018"));

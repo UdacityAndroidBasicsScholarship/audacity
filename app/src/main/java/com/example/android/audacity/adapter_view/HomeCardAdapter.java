@@ -12,9 +12,9 @@ import com.example.android.audacity.R;
 
 import java.util.ArrayList;
 
-public class HomeCardAdapter extends ArrayAdapter<HomeCard> {
+public class HomeCardAdapter extends ArrayAdapter<Card> {
 
-    public HomeCardAdapter(@NonNull Context context, @NonNull ArrayList<HomeCard> objects) {
+    public HomeCardAdapter(@NonNull Context context, @NonNull ArrayList<Card> objects) {
         super(context, 0, objects);
     }
 
@@ -24,29 +24,29 @@ public class HomeCardAdapter extends ArrayAdapter<HomeCard> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.home_card_list_item_layout, parent, false
+                    R.layout.card_list_item_layout, parent, false
             );
         }
 
         //Get the object at this position in this list
-        HomeCard currentCard = getItem(position);
+        Card currentCard = getItem(position);
 
         //Find Each of the TextViews and setText
         //CardHeading
-        TextView homeCardHeadingTextView = listItemView.findViewById(R.id.home_card_heading);
+        TextView homeCardHeadingTextView = listItemView.findViewById(R.id.card_heading);
         homeCardHeadingTextView.setText(currentCard.getHomeCardHeading());
 
         //CardTitle
-        TextView homeCardTitleTextView = listItemView.findViewById(R.id.home_card_title);
-        homeCardTitleTextView.setText(currentCard.getHomeCardTitle());
+        TextView homeCardTitleTextView = listItemView.findViewById(R.id.card_title);
+        homeCardTitleTextView.setText(currentCard.getCardTitle());
 
         //CardAuthor
-        TextView homeCardAuthorTextView = listItemView.findViewById(R.id.home_card_author);
-        homeCardAuthorTextView.setText(currentCard.getHomeCardAuthor());
+        TextView homeCardAuthorTextView = listItemView.findViewById(R.id.card_author);
+        homeCardAuthorTextView.setText(currentCard.getCardAuthor());
 
         //CardDate
-        TextView homeCardDateTextView = listItemView.findViewById(R.id.home_card_date);
-        homeCardDateTextView.setText(currentCard.getHomeCardDate());
+        TextView homeCardDateTextView = listItemView.findViewById(R.id.card_date);
+        homeCardDateTextView.setText(currentCard.getCardDate());
 
         return listItemView;
     }

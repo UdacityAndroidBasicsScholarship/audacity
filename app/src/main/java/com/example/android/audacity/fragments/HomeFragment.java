@@ -7,10 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.android.audacity.R;
-import com.example.android.audacity.adapter_view.HomeCard;
+import com.example.android.audacity.adapter_view.Card;
 import com.example.android.audacity.adapter_view.HomeCardAdapter;
 
 import java.util.ArrayList;
@@ -21,7 +20,7 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
 
     View rootView;
-    ArrayList<HomeCard> homeCards;
+    ArrayList<Card> homeCards;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -48,22 +47,22 @@ public class HomeFragment extends Fragment {
 
     private void dummyArrayList() {
         homeCards = new ArrayList<>();
-        homeCards.add(new HomeCard(
+        homeCards.add(new Card(
                 "Hottest App of the Day",
                 "App Name",
                 "Student Name",
                 "Posted On 20-04-2018"));
-        homeCards.add(new HomeCard(
+        homeCards.add(new Card(
                 "Challenges",
                 "Challenge Name",
                 "Moderator Name",
                 "End Date: 20-04-2017"));
-        homeCards.add(new HomeCard(
+        homeCards.add(new Card(
                 "Quizzes",
                 "Quiz Name",
                 "Moderator Name",
                 "End Date: 20-04-2017"));
-        homeCards.add(new HomeCard(
+        homeCards.add(new Card(
                 "Results",
                 "Quiz/Challenge Name",
                 "Moderator Name",

@@ -11,10 +11,10 @@ import com.example.android.audacity.R;
 import java.util.List;
 
 public class FragmentsAdapter extends RecyclerView.Adapter<FragmentsAdapter.ViewHolder> {
-    private List<HomeCard> cardsList;
+    private List<Card> cardsList;
 
     // Constructor
-    public FragmentsAdapter(List<HomeCard> cards) {
+    public FragmentsAdapter(List<Card> cards) {
         this.cardsList = cards;
     }
 
@@ -23,7 +23,7 @@ public class FragmentsAdapter extends RecyclerView.Adapter<FragmentsAdapter.View
     public FragmentsAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //create a new view
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.home_card_list_item_layout, parent, false);
+                .inflate(R.layout.card_list_item_layout, parent, false);
 
         ViewHolder holder = new ViewHolder(view);
         return holder;
@@ -33,9 +33,9 @@ public class FragmentsAdapter extends RecyclerView.Adapter<FragmentsAdapter.View
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         //Sets Data onto ViewHolder
-        holder.titleTextView.setText(cardsList.get(position).getHomeCardTitle());
-        holder.authorTextView.setText(cardsList.get(position).getHomeCardAuthor());
-        holder.dateTextVIew.setText(cardsList.get(position).getHomeCardDate());
+        holder.titleTextView.setText(cardsList.get(position).getCardTitle());
+        holder.authorTextView.setText(cardsList.get(position).getCardAuthor());
+        holder.dateTextVIew.setText(cardsList.get(position).getCardDate());
     }
 
     //Return the size of your dataset (invoked by the layout manager)
@@ -52,12 +52,12 @@ public class FragmentsAdapter extends RecyclerView.Adapter<FragmentsAdapter.View
         public ViewHolder(View v) {
             super(v);
             //Hide views in the heading since they're not required
-            v.findViewById(R.id.home_card_heading).setVisibility(View.GONE);
+            v.findViewById(R.id.card_heading).setVisibility(View.GONE);
             v.findViewById(R.id.view_all_textview).setVisibility(View.GONE);
             //TextViews to populate
-            titleTextView = v.findViewById(R.id.home_card_title);
-            authorTextView = v.findViewById(R.id.home_card_author);
-            dateTextVIew = v.findViewById(R.id.home_card_date);
+            titleTextView = v.findViewById(R.id.card_title);
+            authorTextView = v.findViewById(R.id.card_author);
+            dateTextVIew = v.findViewById(R.id.card_date);
         }
     }
 }
