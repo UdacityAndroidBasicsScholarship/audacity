@@ -11,6 +11,8 @@ public class Home {
     private String mDescription;
     // URL related to the post
     private String mUrl;
+    // date of the project upload
+    private String mDate;
 
     /**
      * Constructor
@@ -18,11 +20,13 @@ public class Home {
      * @param name        of the post
      * @param description of the post
      * @param url         related to the post
+     * @param date        date of the project upload
      */
-    public Home(String name, String description, String url) {
+    public Home(String name, String description, String url, String date) {
         mName = name;
         mDescription = description;
         mUrl = url;
+        mDate = date;
     }
 
     /**
@@ -44,5 +48,12 @@ public class Home {
      */
     public String getUrl() {
         return mUrl;
+    }
+
+    /**
+     * @return the date of the project upload
+     */
+    public String getDate() {
+        return mDate;
     }
 }

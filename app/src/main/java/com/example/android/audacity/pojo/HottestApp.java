@@ -11,6 +11,8 @@ public class HottestApp {
     private String mHottestAppDescription;
     // Github URL of the app
     private String mUrl;
+    // Date of upload of the app
+    private String mDate;
 
     /**
      * Constructor
@@ -18,11 +20,13 @@ public class HottestApp {
      * @param hottestAppName        name of the hottest app
      * @param hottestAppDescription description of the hottest app
      * @param url                   github link of the hottest app
+     * @param date                  date of the app upload
      */
-    public HottestApp(String hottestAppName, String hottestAppDescription, String url) {
+    public HottestApp(String hottestAppName, String hottestAppDescription, String url, String date) {
         mHottestAppName = hottestAppName;
         mHottestAppDescription = hottestAppDescription;
         mUrl = url;
+        mDate = date;
     }
 
     /**
@@ -44,5 +48,12 @@ public class HottestApp {
      */
     public String getUrl() {
         return mUrl;
+    }
+
+    /**
+     * @return the date of the app upload
+     */
+    public String getDate() {
+        return mDate;
     }
 }

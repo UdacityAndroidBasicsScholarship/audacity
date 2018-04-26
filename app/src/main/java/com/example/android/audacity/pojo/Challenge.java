@@ -9,16 +9,29 @@ public class Challenge {
     private String mChallengeName;
     // Variable to store the challenge description
     private String mChallengeDescription;
+    // starting date of the challenge
+    private String mStartDate;
+    // ending date of the challenge
+    private String mEndDate;
+    // variable to see if the deadline is crossed
+    private boolean mIsDeadline;
 
     /**
      * Constructor
      *
      * @param challengeName        name of the challenge
-     * @param challengeDescription descrption of the challenge
+     * @param challengeDescription description of the challenge
+     * @param startDate            start date of the challenge
+     * @param endDate              end date of the challenge
+     * @param isDeadline           is the deadline over or not
      */
-    public Challenge(String challengeName, String challengeDescription) {
+    public Challenge(String challengeName, String challengeDescription, String startDate,
+                     String endDate, boolean isDeadline) {
         mChallengeName = challengeName;
         mChallengeDescription = challengeDescription;
+        mStartDate = startDate;
+        mEndDate = endDate;
+        mIsDeadline = isDeadline;
     }
 
     /**
@@ -33,5 +46,26 @@ public class Challenge {
      */
     public String getChallengeDescription() {
         return mChallengeDescription;
+    }
+
+    /**
+     * @return the start date of the challenge
+     */
+    public String getStartDate() {
+        return mStartDate;
+    }
+
+    /**
+     * @return the end date of the challenge
+     */
+    public String getEndDate() {
+        return mEndDate;
+    }
+
+    /**
+     * @return if the deadline is over or not
+     */
+    public boolean isDeadline() {
+        return mIsDeadline;
     }
 }

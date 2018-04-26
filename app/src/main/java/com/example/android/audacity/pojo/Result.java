@@ -15,32 +15,46 @@ public class Result {
     private ArrayList<String> mWinners;
     // Link to the github url of the project if applicable
     private ArrayList<String> mProjectUrls;
+    // Date of the held event
+    private String mDateOfEvent;
+    // Date of the result announcement
+    private String mDateOfAnnouncement;
 
     /**
-     * Constructor for the results of projects
+     * Constructor for the results of challenges
      *
      * @param eventName        name of the event
      * @param eventDescription description of the event
      * @param winners          of the event
+     * @param dateOfEvent      date of the event
+     * @param dateOfAnnouncement date of announcement of the result
      */
-    public Result(String eventName, String eventDescription, ArrayList<String> winners, ArrayList<String> projectUrls) {
+    public Result(String eventName, String eventDescription, ArrayList<String> winners, ArrayList<String> projectUrls,
+                  String dateOfEvent, String dateOfAnnouncement) {
         mEventName = eventName;
         mEventDescription = eventDescription;
         mWinners = winners;
         mProjectUrls = projectUrls;
+        mDateOfEvent = dateOfEvent;
+        mDateOfAnnouncement = dateOfAnnouncement;
     }
 
     /**
      * Constructor for the results of non-project activites(like quizzes)
      *
-     * @param mEventName        name of the event
-     * @param mEventDescription description of the event
-     * @param mWinners          winners of the event
+     * @param eventName        name of the event
+     * @param eventDescription description of the event
+     * @param winners          winners of the event
+     * @param dateOfEvent      date of the event
+     * @param dateOfAnnouncement date of announcement of the result
      */
-    public Result(String mEventName, String mEventDescription, ArrayList<String> mWinners) {
-        this.mEventName = mEventName;
-        this.mEventDescription = mEventDescription;
-        this.mWinners = mWinners;
+    public Result(String eventName, String eventDescription, ArrayList<String> winners,
+                  String dateOfEvent, String dateOfAnnouncement) {
+        mEventName = eventName;
+        mEventDescription = eventDescription;
+        mWinners = winners;
+        mDateOfEvent = dateOfEvent;
+        mDateOfAnnouncement = dateOfAnnouncement;
     }
 
     /**
