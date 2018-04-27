@@ -35,11 +35,14 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
     private FirebaseAuth mFirebaseAuth;
     private GoogleSignInOptions gso;
     private GoogleSignInClient mGoogleSignInClient;
+    public static String[] mCategoriesArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        mCategoriesArray = getResources().getStringArray(R.array.categories);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         if (mFirebaseAuth == null) {

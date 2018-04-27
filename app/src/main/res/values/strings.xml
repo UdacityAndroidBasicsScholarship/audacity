@@ -21,4 +21,17 @@
 
     <string name="right_arrow">Right Arrow Image</string>
     <string name="view_all">View All</string>
+
+    <!--Categories String Array-->
+    <string name="challenges">Challenges</string>
+    <string name="hottestApp">Hottest App</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="results">Results</string>
+
+    <string-array name="categories">
+        <item>@string/challenges</item>
+        <item>@string/hottestApp</item>
+        <item>@string/quizzes</item>
+        <item>@string/results</item>
+    </string-array>
 </resources>
