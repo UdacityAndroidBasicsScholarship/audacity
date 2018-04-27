@@ -6,13 +6,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.android.audacity.R;
 import com.example.android.audacity.models.ChallengesModel;
 
 import java.util.ArrayList;
 
-public class ChallengesAdapter extends RecyclerView.Adapter<ChallengesViewHolder> {
+public class ChallengesAdapter extends RecyclerView.Adapter<ChallengesAdapter.ChallengesViewHolder> {
 
     private Context mContext;
     private ArrayList<ChallengesModel> mChallengesList;
@@ -42,5 +44,21 @@ public class ChallengesAdapter extends RecyclerView.Adapter<ChallengesViewHolder
     @Override
     public int getItemCount() {
         return mChallengesList.size();
+    }
+
+    class ChallengesViewHolder extends RecyclerView.ViewHolder {
+
+        ImageView mProfileImage;
+        TextView mChallengeName;
+        TextView mModeratorName;
+        TextView mEndDate;
+
+        ChallengesViewHolder(View itemView) {
+            super(itemView);
+            mProfileImage = itemView.findViewById(R.id.profile_image);
+            mChallengeName = itemView.findViewById(R.id.header_text);
+            mModeratorName = itemView.findViewById(R.id.sub_text);
+            mEndDate = itemView.findViewById(R.id.date_text);
+        }
     }
 }
