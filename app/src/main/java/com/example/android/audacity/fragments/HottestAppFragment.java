@@ -55,8 +55,7 @@ public class HottestAppFragment extends Fragment {
     private void setUpHottestAppData() {
         mAppList = new ArrayList<>();
         for(int i=0; i<10; i++) {
-            mAppList.add(new HottestAppModel(R.mipmap.ic_launcher_round,
-                    "App Name", "Student Name",
+            mAppList.add(new HottestAppModel("App Name", "Student Name",
                     "Posted Date " + new SimpleDateFormat("dd-MM-yyyy",
                             Locale.getDefault()).format(new Date())));
         }

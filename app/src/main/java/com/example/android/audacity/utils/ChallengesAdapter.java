@@ -35,7 +35,9 @@ public class ChallengesAdapter extends RecyclerView.Adapter<ChallengesAdapter.Ch
     @Override
     public void onBindViewHolder(@NonNull ChallengesViewHolder holder, int position) {
         ChallengesModel challengesModel = mChallengesList.get(position);
-        holder.mProfileImage.setBackgroundResource(challengesModel.getmProfileImageId());
+        //uncomment or replace below line with Glide image loading logic
+        /*Glide.with(holder.mProfileImage.getContext()).load(challengesModel.getmProfileImageUrl())
+                .into(holder.mProfileImage);*/
         holder.mChallengeName.setText(challengesModel.getmChallengeName());
         holder.mModeratorName.setText(challengesModel.getmModeratorName());
         holder.mEndDate.setText(challengesModel.getmEndDate());

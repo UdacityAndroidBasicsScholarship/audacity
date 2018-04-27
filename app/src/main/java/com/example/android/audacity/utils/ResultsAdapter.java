@@ -35,7 +35,9 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.ResultsV
     @Override
     public void onBindViewHolder(@NonNull ResultsViewHolder holder, int position) {
         ResultsModel resultModel = mResultsList.get(position);
-        holder.mProfileImage.setBackgroundResource(resultModel.getmProfileImageId());
+        //uncomment or replace below line with Glide image loading logic
+        /*Glide.with(holder.mProfileImage.getContext()).load(resultModel.getmProfileImageUrl())
+                .into(holder.mProfileImage);*/
         holder.mQuiz_ChallengeName.setText(resultModel.getmQuiz_ChallengeName());
         holder.mModeratorName.setText(resultModel.getmModeratorName());
         holder.mPostedDate.setText(resultModel.getmPostedDate());

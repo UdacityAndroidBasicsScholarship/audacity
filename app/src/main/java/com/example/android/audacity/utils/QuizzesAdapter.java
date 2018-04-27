@@ -35,7 +35,9 @@ public class QuizzesAdapter extends RecyclerView.Adapter<QuizzesAdapter.QuizzesV
     @Override
     public void onBindViewHolder(@NonNull QuizzesViewHolder holder, int position) {
         QuizzesModel quizModel = mQuizList.get(position);
-        holder.mProfileImage.setBackgroundResource(quizModel.getmProfileImageId());
+        //uncomment or replace below line with Glide image loading logic
+        /*Glide.with(holder.mProfileImage.getContext()).load(quizModel.getmProfileImageUrl())
+                .into(holder.mProfileImage);*/
         holder.mQuizName.setText(quizModel.getmQuizName());
         holder.mModeratorName.setText(quizModel.getmModeratorName());
         holder.mEndDate.setText(quizModel.getmEndDate());

@@ -55,8 +55,7 @@ public class HomeFragment extends Fragment {
         mHomeItemsList = new ArrayList<>();
         String[] categories = DashboardActivity.mCategoriesArray;
         for(int i = 0; i<categories.length; i++) {
-            mHomeItemsList.add(new HomeModel(categories[i], R.mipmap.ic_launcher_round,
-                    "Header Text", "Sub Text",
+            mHomeItemsList.add(new HomeModel(categories[i],"Header Text", "Sub Text",
                     "Date " + new SimpleDateFormat("dd-MM-yyyy",
                             Locale.getDefault()).format(new Date())));
         }

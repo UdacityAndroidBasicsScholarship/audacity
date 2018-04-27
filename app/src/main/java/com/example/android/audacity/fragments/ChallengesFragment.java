@@ -55,8 +55,7 @@ public class ChallengesFragment extends Fragment {
     private void setUpChallengesData() {
         mChallengesList = new ArrayList<>();
         for(int i=0; i<10; i++) {
-            mChallengesList.add(new ChallengesModel(R.mipmap.ic_launcher_round,
-                    "Challenge Name", "Mod Name",
+            mChallengesList.add(new ChallengesModel("Challenge Name", "Mod Name",
                     "End Date " + new SimpleDateFormat("dd-MM-yyyy",
                             Locale.getDefault()).format(new Date())));
         }

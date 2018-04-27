@@ -54,8 +54,7 @@ public class QuizzesFragment extends Fragment {
     private void setUpQuizzesData() {
         mQuizList = new ArrayList<>();
         for(int i=0; i<10; i++) {
-            mQuizList.add(new QuizzesModel(R.mipmap.ic_launcher_round,
-                    "Quiz Name", "Mod Name",
+            mQuizList.add(new QuizzesModel("Quiz Name", "Mod Name",
                     "End Date " + new SimpleDateFormat("dd-MM-yyyy",
                             Locale.getDefault()).format(new Date())));
         }

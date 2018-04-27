@@ -65,7 +65,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@mipmap/ic_launcher_round" />
+                android:src="@mipmap/ic_launcher_round" />
 
             <TextView
                 android:id="@+id/header_text"

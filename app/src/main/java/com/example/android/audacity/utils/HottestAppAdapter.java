@@ -35,7 +35,9 @@ public class HottestAppAdapter extends RecyclerView.Adapter<HottestAppAdapter.Ho
     @Override
     public void onBindViewHolder(@NonNull HottestAppViewHolder holder, int position) {
         HottestAppModel appModel = mAppList.get(position);
-        holder.mProfileImage.setBackgroundResource(appModel.getmProfileImageId());
+        //uncomment or replace below line with Glide image loading logic
+        /*Glide.with(holder.mProfileImage.getContext()).load(appModel.getmProfileImageUrl())
+                .into(holder.mProfileImage);*/
         holder.mAppName.setText(appModel.getmAppName());
         holder.mStudentName.setText(appModel.getmStudentName());
         holder.mPostedDate.setText(appModel.getmPostedDate());

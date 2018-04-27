@@ -2,20 +2,27 @@ package com.example.android.audacity.models;
 
 public class HottestAppModel {
 
-    private int mProfileImageId;
+    private String mProfileImageUrl;
     private String mAppName;
     private String mStudentName;
     private String mPostedDate;
 
-    public HottestAppModel(int profileImageId, String appName, String studentName, String postedDate) {
-        this.mProfileImageId = profileImageId;
+    public HottestAppModel(String profileImageId, String appName, String studentName, String postedDate) {
+        this.mProfileImageUrl = profileImageId;
         this.mAppName = appName;
         this.mStudentName = studentName;
         this.mPostedDate = postedDate;
     }
 
-    public int getmProfileImageId() {
-        return mProfileImageId;
+    //constructor with no profile image - can be removed later
+    public HottestAppModel(String mAppName, String mStudentName, String mPostedDate) {
+        this.mAppName = mAppName;
+        this.mStudentName = mStudentName;
+        this.mPostedDate = mPostedDate;
+    }
+
+    public String getmProfileImageUrl() {
+        return mProfileImageUrl;
     }
 
     public String getmAppName() {

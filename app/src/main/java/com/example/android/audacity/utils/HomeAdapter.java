@@ -36,7 +36,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
     public void onBindViewHolder(@NonNull HomeViewHolder holder, int position) {
         HomeModel homeModel = mHomeItemsList.get(position);
         holder.mCategory.setText(homeModel.getmCategory());
-        holder.mProfileImage.setBackgroundResource(homeModel.getmProfileImageId());
+        //uncomment or replace below line with Glide image loading logic
+        /*Glide.with(holder.mProfileImage.getContext()).load(homeModel.getmProfileImageUrl())
+                .into(holder.mProfileImage);*/
         holder.mHeaderText.setText(homeModel.getmHeaderText());
         holder.mSubText.setText(homeModel.getmSubText());
         holder.mDateText.setText(homeModel.getmDateText());
