@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_weight="1"
+        android:background="@drawable/profile_background_img">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#CFD8DC"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#ECEFF1"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="8dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:text="user name"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#ECEFF1"
+            android:drawableLeft="@drawable/mail_icon"
+            android:drawablePadding="8dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:text="user@email.com"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#ECEFF1"
+            android:drawableLeft="@drawable/phone_icon"
+            android:drawablePadding="8dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:text="user's contact no"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#ECEFF1"
+            android:drawableLeft="@drawable/status_icon"
+            android:drawablePadding="8dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:text="user's profile status"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#ECEFF1"
+            android:drawablePadding="8dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:text="posts created : #no"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#ECEFF1"
+            android:drawablePadding="8dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:text="challenges completed : #no"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="#ECEFF1"
+            android:drawablePadding="8dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="6dp"
+            android:text="like recieved : #no"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </LinearLayout>
+</LinearLayout>
