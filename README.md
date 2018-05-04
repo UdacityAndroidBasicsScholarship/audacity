@@ -33,7 +33,7 @@ Breif Idea:
 * [Naseem](https://github.com/naseemali925)
 
 ## Contributors
-All Google Udacity Andriod Basics Scholars are eligible to Contribute.
+All Google Udacity Android Basics Scholars are eligible to Contribute.
 Please Read The Contributing Guide <a href="https://github.com/UdacityAndroidBasicsScholarship/audacity/blob/master/CONTRIBUTING.md"> Here </a>
 
 ## How You Can Contribute? ##
