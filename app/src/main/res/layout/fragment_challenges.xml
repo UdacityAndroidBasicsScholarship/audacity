@@ -4,10 +4,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.audacity.fragments.ChallengesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/challenges_text_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>

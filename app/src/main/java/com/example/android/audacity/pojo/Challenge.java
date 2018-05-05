@@ -6,31 +6,34 @@ package com.example.android.audacity.pojo;
 
 public class Challenge {
     // Time stamp for the challenge
-    private String mTimeStamp;
+    private String timestamp;
     // Moderator name
-    private String mModeratorName;
+    private String moderator_name;
     // Moderator email address
-    private String mEmail;
+    private String email_address;
     // Moderator slack id
-    private String mSlackId;
+    private String slack_id;
     // Variable to store the challenge name
-    private String mChallengeName;
+    private String challenge_name;
     // Variable to store the challenge description
-    private String mChallengeDescription;
+    private String challenge_description;
     // Reference Url
-    private String mReferenceUrl;
+    private String reference_url;
     // Image link
-    private String mImageUrl;
+    private String image_link;
     // Video link
-    private String mVideoUrl;
+    private String video_link;
     // starting date of the challenge
-    private String mStartDate;
+    private String start_date;
     // ending date of the challenge
-    private String mEndDate;
-    // variable to see if the deadline is crossed
-    private boolean mIsDeadline;
+    private String end_date;
     // check if the project is approved
-    private boolean mIsApproved;
+    private boolean approved;
+    // profile image url
+    private String profile_image;
+
+    public Challenge() {
+    }
 
     /**
      * Constructor
@@ -46,116 +49,233 @@ public class Challenge {
      * @param videoUrl             video url of the challenge
      * @param startDate            start date of the challenge
      * @param endDate              end date of the challenge
-     * @param isDeadline           is the deadline over or not
      * @param isApproved           is the project approved
+     * @param profileImage         url of the profile image
      */
     public Challenge(String timeStamp, String moderatorName, String email, String slackId,
                      String challengeName, String challengeDescription, String referenceUrl,
                      String imageUrl, String videoUrl, String startDate, String endDate,
-                     boolean isDeadline, boolean isApproved) {
-        mTimeStamp = timeStamp;
-        mModeratorName = moderatorName;
-        mEmail = email;
-        mSlackId = slackId;
-        mChallengeName = challengeName;
-        mChallengeDescription = challengeDescription;
-        mReferenceUrl = referenceUrl;
-        mImageUrl = imageUrl;
-        mVideoUrl = videoUrl;
-        mStartDate = startDate;
-        mEndDate = endDate;
-        mIsDeadline = isDeadline;
-        mIsApproved = isApproved;
+                     boolean isApproved, String profileImage) {
+        timestamp = timeStamp;
+        moderator_name = moderatorName;
+        email_address = email;
+        slack_id = slackId;
+        challenge_name = challengeName;
+        challenge_description = challengeDescription;
+        reference_url = referenceUrl;
+        image_link = imageUrl;
+        video_link = videoUrl;
+        start_date = startDate;
+        end_date = endDate;
+        approved = isApproved;
+        profile_image = profileImage;
     }
 
     /**
      * @return the time stamp of the challenge
      */
     public String getTimeStamp() {
-        return mTimeStamp;
+        return timestamp;
+    }
+
+    /**
+     * Set the timestamp
+     *
+     * @param timeStamp
+     */
+    public void setTimeStamp(String timeStamp) {
+        timestamp = timeStamp;
     }
 
     /**
      * @return the moderator name
      */
     public String getModeratorName() {
-        return mModeratorName;
+        return moderator_name;
+    }
+
+    /**
+     * Set the moderator name
+     *
+     * @param moderatorName
+     */
+    public void setModeratorName(String moderatorName) {
+        moderator_name = moderatorName;
     }
 
     /**
      * @return the email id of the moderator
      */
     public String getEmail() {
-        return mEmail;
+        return email_address;
     }
 
     /**
      * @return the slack id of the challenge
      */
     public String getSlackId() {
-        return mSlackId;
+        return slack_id;
+    }
+
+    /**
+     * set the slack id
+     *
+     * @param slackId
+     */
+    public void setSlackId(String slackId) {
+        slack_id = slackId;
     }
 
     /**
      * @return the challenge name
      */
     public String getChallengeName() {
-        return mChallengeName;
+        return challenge_name;
+    }
+
+    /**
+     * set the challenge name
+     *
+     * @param challengeName
+     */
+    public void setChallengeName(String challengeName) {
+        challenge_name = challengeName;
     }
 
     /**
      * @return the challenge description
      */
     public String getChallengeDescription() {
-        return mChallengeDescription;
+        return challenge_description;
+    }
+
+    /**
+     * set the challenge description
+     *
+     * @param challengeDescription
+     */
+    public void setChallengeDescription(String challengeDescription) {
+        challenge_description = challengeDescription;
     }
 
     /**
      * @return the reference url for the challenge
      */
     public String getReferenceUrl() {
-        return mReferenceUrl;
+        return reference_url;
+    }
+
+    /**
+     * set the reference url
+     *
+     * @param referenceUrl
+     */
+    public void setReferenceUrl(String referenceUrl) {
+        reference_url = referenceUrl;
     }
 
     /**
      * @return the image url of the challenge
      */
     public String getImageUrl() {
-        return mImageUrl;
+        return image_link;
     }
 
     /**
      * @return the video url of the challenge
      */
     public String getVideoUrl() {
-        return mVideoUrl;
+        return video_link;
     }
 
     /**
      * @return the start date of the challenge
      */
     public String getStartDate() {
-        return mStartDate;
+        return start_date;
+    }
+
+    /**
+     * set the start date
+     *
+     * @param startDate
+     */
+    public void setStartDate(String startDate) {
+        start_date = startDate;
     }
 
     /**
      * @return the end date of the challenge
      */
     public String getEndDate() {
-        return mEndDate;
+        return end_date;
     }
 
     /**
-     * @return if the deadline is over or not
+     * set the end date
+     *
+     * @param endDate
      */
-    public boolean isDeadline() {
-        return mIsDeadline;
+    public void setEndDate(String endDate) {
+        end_date = endDate;
     }
 
     /**
      * @return if the project is approved or not
      */
     public boolean isApproved() {
-        return mIsApproved;
+        return approved;
+    }
+
+    /**
+     * set the approval status
+     *
+     * @param approved
+     */
+    public void setApproved(boolean approved) {
+        this.approved = approved;
+    }
+
+    /**
+     * @return the profile image url
+     */
+    public String getProfileImage() {
+        return profile_image;
+    }
+
+    /**
+     * set the profile image url
+     *
+     * @param profileImage
+     */
+    public void setProfileImage(String profileImage) {
+        profile_image = profileImage;
+    }
+
+    /**
+     * set the email address
+     *
+     * @param emailAddress
+     */
+    public void setEmailAddress(String emailAddress) {
+        email_address = emailAddress;
+    }
+
+    /**
+     * set the image link
+     *
+     * @param imageLink
+     */
+    public void setImageLink(String imageLink) {
+        image_link = imageLink;
+    }
+
+    /**
+     * set the video link
+     *
+     * @param videoLink
+     */
+    public void setVideoLink(String videoLink) {
+        video_link = videoLink;
     }
 }
