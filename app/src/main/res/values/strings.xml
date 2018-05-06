@@ -18,4 +18,5 @@
     <string name="settings_title">Settings</string>
     <string name="login_welcome_title" >Welcome to Audacity</string>
     <string name="home">Home</string>
+    <string name="hello">Hello</string>
 </resources>
