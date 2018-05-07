@@ -31,6 +31,7 @@ Breif Idea:
 * [Suhanshu Patel](https://github.com/Suhanshu123)
 * [Mohan Cm](https://github.com/mohancm)
 * [Naseem](https://github.com/naseemali925)
+* [Ankush S Shetkar](https://github.com/lifeLessCoder)
 
 ## Contributors
 All Google Udacity Android Basics Scholars are eligible to Contribute.
