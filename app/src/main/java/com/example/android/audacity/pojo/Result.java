@@ -20,6 +20,7 @@ public class Result {
     // Date of the result announcement
     private String mDateOfAnnouncement;
 
+    public Result(){}
     /**
      * Constructor for the results of challenges
      *
@@ -60,28 +61,60 @@ public class Result {
     /**
      * @return the name of the event
      */
-    public String getEventName() {
+    public String getmEventName() {
         return mEventName;
     }
 
     /**
      * @return the description of the event
      */
-    public String getEventDescription() {
+    public String getmEventDescription() {
         return mEventDescription;
     }
 
     /**
      * @return the winners of the event
      */
-    public ArrayList<String> getWinners() {
+    public ArrayList<String> getmWinners() {
         return mWinners;
     }
 
     /**
      * @return the urls of the projects of the winners
      */
-    public ArrayList<String> getProjectUrls() {
+    public ArrayList<String> getmProjectUrls() {
         return mProjectUrls;
+    }
+
+    public void setmEventName(String mEventName) {
+        this.mEventName = mEventName;
+    }
+
+    public void setmEventDescription(String mEventDescription) {
+        this.mEventDescription = mEventDescription;
+    }
+
+    public void setmWinners(ArrayList<String> mWinners) {
+        this.mWinners = mWinners;
+    }
+
+    public void setmProjectUrls(ArrayList<String> mProjectUrls) {
+        this.mProjectUrls = mProjectUrls;
+    }
+
+    public String getmDateOfEvent() {
+        return mDateOfEvent;
+    }
+
+    public void setmDateOfEvent(String mDateOfEvent) {
+        this.mDateOfEvent = mDateOfEvent;
+    }
+
+    public String getmDateOfAnnouncement() {
+        return mDateOfAnnouncement;
+    }
+
+    public void setmDateOfAnnouncement(String mDateOfAnnouncement) {
+        this.mDateOfAnnouncement = mDateOfAnnouncement;
     }
 }
