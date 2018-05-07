@@ -81,39 +81,39 @@ public class Challenge {
     /**
      * Set the timestamp
      *
-     * @param timeStamp
+     * @param timestamp
      */
-    public void setTimeStamp(String timeStamp) {
-        timestamp = timeStamp;
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
     }
 
     /**
      * @return the moderator name
      */
-    public String getModeratorName() {
+    public String getModerator_name() {
         return moderator_name;
     }
 
     /**
      * Set the moderator name
      *
-     * @param moderatorName
+     * @param moderator_name
      */
-    public void setModeratorName(String moderatorName) {
-        moderator_name = moderatorName;
+    public void setModerator_name(String moderator_name) {
+        this.moderator_name = moderator_name;
     }
 
     /**
      * @return the email id of the moderator
      */
-    public String getEmail() {
+    public String getEmail_address() {
         return email_address;
     }
 
     /**
      * @return the slack id of the challenge
      */
-    public String getSlackId() {
+    public String getSlack_id() {
         return slack_id;
     }
 
@@ -122,14 +122,14 @@ public class Challenge {
      *
      * @param slackId
      */
-    public void setSlackId(String slackId) {
+    public void setSlack_id(String slackId) {
         slack_id = slackId;
     }
 
     /**
      * @return the challenge name
      */
-    public String getChallengeName() {
+    public String getChallenge_name() {
         return challenge_name;
     }
 
@@ -138,14 +138,14 @@ public class Challenge {
      *
      * @param challengeName
      */
-    public void setChallengeName(String challengeName) {
+    public void setChallenge_name(String challengeName) {
         challenge_name = challengeName;
     }
 
     /**
      * @return the challenge description
      */
-    public String getChallengeDescription() {
+    public String getChallenge_description() {
         return challenge_description;
     }
 
@@ -154,14 +154,14 @@ public class Challenge {
      *
      * @param challengeDescription
      */
-    public void setChallengeDescription(String challengeDescription) {
+    public void setChallenge_description(String challengeDescription) {
         challenge_description = challengeDescription;
     }
 
     /**
      * @return the reference url for the challenge
      */
-    public String getReferenceUrl() {
+    public String getReference_url() {
         return reference_url;
     }
 
@@ -170,28 +170,28 @@ public class Challenge {
      *
      * @param referenceUrl
      */
-    public void setReferenceUrl(String referenceUrl) {
+    public void setReference_url(String referenceUrl) {
         reference_url = referenceUrl;
     }
 
     /**
      * @return the image url of the challenge
      */
-    public String getImageUrl() {
+    public String getImage_link() {
         return image_link;
     }
 
     /**
      * @return the video url of the challenge
      */
-    public String getVideoUrl() {
+    public String getVideo_link() {
         return video_link;
     }
 
     /**
      * @return the start date of the challenge
      */
-    public String getStartDate() {
+    public String getStart_date() {
         return start_date;
     }
 
@@ -200,14 +200,14 @@ public class Challenge {
      *
      * @param startDate
      */
-    public void setStartDate(String startDate) {
+    public void setStart_date(String startDate) {
         start_date = startDate;
     }
 
     /**
      * @return the end date of the challenge
      */
-    public String getEndDate() {
+    public String getEnd_date() {
         return end_date;
     }
 
@@ -216,7 +216,7 @@ public class Challenge {
      *
      * @param endDate
      */
-    public void setEndDate(String endDate) {
+    public void setEnd_date(String endDate) {
         end_date = endDate;
     }
 
@@ -239,7 +239,7 @@ public class Challenge {
     /**
      * @return the profile image url
      */
-    public String getProfileImage() {
+    public String getProfile_image() {
         return profile_image;
     }
 
@@ -248,7 +248,7 @@ public class Challenge {
      *
      * @param profileImage
      */
-    public void setProfileImage(String profileImage) {
+    public void setProfile_image(String profileImage) {
         profile_image = profileImage;
     }
 
@@ -257,7 +257,7 @@ public class Challenge {
      *
      * @param emailAddress
      */
-    public void setEmailAddress(String emailAddress) {
+    public void setEmail_address(String emailAddress) {
         email_address = emailAddress;
     }
 
@@ -266,7 +266,7 @@ public class Challenge {
      *
      * @param imageLink
      */
-    public void setImageLink(String imageLink) {
+    public void setImage_link(String imageLink) {
         image_link = imageLink;
     }
 
@@ -275,7 +275,17 @@ public class Challenge {
      *
      * @param videoLink
      */
-    public void setVideoLink(String videoLink) {
+    public void setVideo_link(String videoLink) {
         video_link = videoLink;
     }
+
+    /**
+     *
+     * @return timestamp
+     */
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+
 }

@@ -30,6 +30,8 @@ public class HottestApp {
     // profile image url
     private String profile_image;
 
+    //Empty Constructor for Firebase
+    public HottestApp(){}
     /**
      * Constructor
      *
@@ -46,6 +48,7 @@ public class HottestApp {
      * @param isApproved            is the app approved by the moderator
      * @param profileImage          profile image url
      */
+
     public HottestApp(String timeStamp, String email, String name, String slackId, String hottestAppName,
                       String hottestAppDescription, String imageUrl, String videoUrl, String url, String date,
                       boolean isApproved, String profileImage) {
@@ -66,88 +69,69 @@ public class HottestApp {
     /**
      * @return the timestamp of the hottest app
      */
-    public String getTimeStamp() {
-        return timestamp;
-    }
+    public String getTimestamp() {return timestamp;}
 
     /**
      * @return the email id of the student
      */
-    public String getEmail() {
-        return email_address;
-    }
+    public String getEmail_address() {return email_address;}
 
     /**
      * @return the name of the student
      */
-    public String getName() {
-        return student_name;
-    }
+
+    public String getStudent_name() {return student_name;}
+
+
 
     /**
      * @return the slack id of the student
      */
-    public String getSlackId() {
-        return slack_id;
-    }
+    public String getSlack_id() {return slack_id;}
 
     /**
      * set the slack ID
      *
      * @param slackId
      */
-    public void setSlackId(String slackId) {
-        slack_id = slackId;
-    }
+    public void setSlack_id(String slackId) {this.slack_id = slackId;}
+
 
     /**
      * @return the name of the hottest app
      */
-    public String getHottestAppName() {
-        return app_title;
-    }
+
+    public String getApp_title() {return app_title;}
 
     /**
      * @return the description of the hottest app
      */
-    public String getHottestAppDescription() {
-        return app_description;
-    }
+    public String getApp_description() {return app_description;}
 
     /**
      * @return the image url of the app
      */
-    public String getImageUrl() {
-        return image;
-    }
+    public String getImage() {return image;}
 
     /**
      * @return the video url of the app
      */
-    public String getVideoUrl() {
-        return video_link;
-    }
+    public String getVideo_link() {return video_link;}
 
     /**
      * @return github url of the hottest app
      */
-    public String getUrl() {
-        return github_url;
-    }
+    public String getGithub_url() {return github_url;}
 
     /**
      * @return the date of the app upload
      */
-    public String getDate() {
-        return posted_date;
-    }
+    public String getPosted_date() { return posted_date;}
 
     /**
      * @return if the app is approved or not
      */
-    public boolean isApproved() {
-        return approved;
-    }
+    public boolean isApproved() { return approved; }
 
     /**
      * set approval state of the app
@@ -161,7 +145,7 @@ public class HottestApp {
     /**
      * @return the profile image url
      */
-    public String getProfileImage() {
+    public String getProfile_image() {
         return profile_image;
     }
 
@@ -170,53 +154,53 @@ public class HottestApp {
      *
      * @param profileImage
      */
-    public void setProfileImage(String profileImage) {
+    public void setProfile_image(String profileImage) {
         profile_image = profileImage;
     }
 
     /**
      * set the time stamp of the app
      *
-     * @param timeStamp
+     * @param timestamp
      */
-    public void setTimestamp(String timeStamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 
     /**
      * set the email address
      *
-     * @param emailAddress
+     * @param email_address
      */
-    public void setEmailAddress(String emailAddress) {
-        email_address = emailAddress;
+    public void setEmail_address(String email_address) {
+        this.email_address = email_address;
     }
 
     /**
      * set the student name
      *
-     * @param studentName
+     * @param student_name
      */
-    public void setStudentName(String studentName) {
-        student_name = studentName;
+    public void setStudent_name(String student_name) {
+        this.student_name = student_name;
     }
 
     /**
      * set the app title
      *
-     * @param appTitle
+     * @param app_title
      */
-    public void setAppTitle(String appTitle) {
-        app_title = appTitle;
+    public void setApp_title(String app_title) {
+        this.app_title = app_title;
     }
 
     /**
      * set the app descrption
      *
-     * @param appDescription
+     * @param app_description
      */
-    public void setAppDescription(String appDescription) {
-        app_description = appDescription;
+    public void setApp_description(String app_description) {
+        this.app_description = app_description;
     }
 
     /**
@@ -231,27 +215,27 @@ public class HottestApp {
     /**
      * set the video link
      *
-     * @param videoLink
+     * @param video_link
      */
-    public void setVideoLink(String videoLink) {
-        video_link = videoLink;
+    public void setVideo_link(String video_link) {
+        this.video_link = video_link;
     }
 
     /**
      * set the github url
      *
-     * @param githubUrl
+     * @param github_url
      */
-    public void setGithubUrl(String githubUrl) {
-        github_url = githubUrl;
+    public void setGithub_url(String github_url) {
+        this.github_url = github_url;
     }
 
     /**
      * set the posted date
      *
-     * @param postedDate
+     * @param posted_date
      */
-    public void setPostedDate(String postedDate) {
-        posted_date = postedDate;
+    public void setPosted_date(String posted_date) {
+        this.posted_date = posted_date;
     }
 }

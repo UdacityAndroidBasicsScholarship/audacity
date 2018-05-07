@@ -32,28 +32,44 @@ public class Home {
     /**
      * @return the name of the post
      */
-    public String getName() {
+    public String getmName() {
         return mName;
     }
 
     /**
      * @return the description of the post
      */
-    public String getDescription() {
+    public String getmDescription() {
         return mDescription;
     }
 
     /**
      * @return the URL related to the post
      */
-    public String getUrl() {
+    public String getmUrl() {
         return mUrl;
     }
 
     /**
      * @return the date of the project upload
      */
-    public String getDate() {
+    public String getmDate() {
         return mDate;
+    }
+
+    public void setmName(String mName) {
+        this.mName = mName;
+    }
+
+    public void setmDescription(String mDescription) {
+        this.mDescription = mDescription;
+    }
+
+    public void setmUrl(String mUrl) {
+        this.mUrl = mUrl;
+    }
+
+    public void setmDate(String mDate) {
+        this.mDate = mDate;
     }
 }
