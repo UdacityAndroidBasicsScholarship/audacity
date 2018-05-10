@@ -18,5 +18,15 @@
     <string name="settings_title">Settings</string>
     <string name="login_welcome_title" >Welcome to Audacity</string>
     <string name="home">Home</string>
+
+  <!-- Login Page String -->
+    <string name="name_login">AUdacity Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="fpassword">Forgot Password?</string>
+    <string name="signIn">SIGN IN</string>
+    <string name="loginText">Or Login with</string>
+    <string name="signUp">Dont have an account? Sign Up</string>
     <string name="hello">Hello</string>
 </resources>
