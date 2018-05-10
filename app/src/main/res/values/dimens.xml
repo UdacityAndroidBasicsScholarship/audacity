@@ -14,4 +14,8 @@
     <dimen name="dimen_4dp">4dp</dimen>
     <dimen name="profile_img_width">64dp</dimen>
     <dimen name="profile_img_height">64dp</dimen>
+
+    <!-- Logo Design Demin-->
+    <dimen name="signUpMarginBottom">10dp</dimen>
+    <dimen name="signUpMarginTop">5dp</dimen>
 </resources>
