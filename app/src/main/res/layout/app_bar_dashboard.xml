@@ -5,18 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
-
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
-
         <include layout="@layout/app_toolbar" />
-
     </android.support.design.widget.AppBarLayout>
-
     <include layout="@layout/content_dashboard" />
-
-
-
 </android.support.design.widget.CoordinatorLayout>
