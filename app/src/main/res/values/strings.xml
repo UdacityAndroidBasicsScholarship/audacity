@@ -16,7 +16,11 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="settings_title">Settings</string>
-    <string name="login_welcome_title" >Welcome to Audacity</string>
+    <string name="login_welcome_title">Welcome to Audacity</string>
     <string name="home">Home</string>
-    <string name="hello">Hello</string>
+    <string name="posted_on">Posted On</string>
+    <string name="end_date">End Date</string>
+    <string name="view_all">View All</string>
+    <string name="hottest_app_of_the_day">Hottest App of the Day</string>
+    <string name="challenges">Challenges</string>
 </resources>
