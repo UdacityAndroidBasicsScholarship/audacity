@@ -13,10 +13,57 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <!-- strings for challenge fragment-->
+    <string name="challenge1">Challenge Name 1</string>
+    <string name="challenge2">Challenge Name 2</string>
+    <string name="challenge3">Challenge Name 3</string>
+    <string name="challenge4">Challenge Name 4</string>
+    <string name="challenge5">Challenge Name 5</string>
+    <string name="challenge6">Challenge Name 6</string>
+    <string name="challenge7">Challenge Name 7</string>
+    <string name="challenge8">Challenge Name 8</string>
+    <string name="challenge9">Challenge Name 9</string>
+    <string name="challenge10">Challenge Name 10</string>
+    <string name="moderator">Moderator Name</string>
+    <string name="end_date">End date: Not yet announced</string>
+    <string name="start">Go</string>
+
+
+    <!-- strings for quizzes fragment-->
+    <string name="quiz1">Quiz Name 1</string>
+    <string name="quiz2">Quiz Name 2</string>
+    <string name="quiz3">Quiz Name 3</string>
+    <string name="quiz4">Quiz Name 4</string>
+    <string name="quiz5">Quiz Name 5</string>
+    <string name="quiz6">Quiz Name 6</string>
+    <string name="quiz7">Quiz Name 7</string>
+    <string name="quiz8">Quiz Name 8</string>
+    <string name="quiz9">Quiz Name 9</string>
+    <string name="quiz10">Quiz Name 10</string>
+    <string name="qstart">Start Quiz</string>
+
+
+    <!-- strings for results fragment-->
+    <string name="result1">Quiz/Challenge Name 1</string>
+    <string name="result2">Quiz/Challenge Name 2</string>
+    <string name="result3">Quiz/Challenge Name 3</string>
+    <string name="result4">Quiz/Challenge Name 4</string>
+    <string name="result5">Quiz/Challenge Name 5</string>
+    <string name="result6">Quiz/Challenge Name 6</string>
+    <string name="result7">Quiz/Challenge Name 7</string>
+    <string name="result8">Quiz/Challenge Name 8</string>
+    <string name="result9">Quiz/Challenge Name 9</string>
+    <string name="result10">Quiz/Challenge Name 10</string>
+    <string name="rupdate">updated on:need to update</string>
+    <string name="show">Open</string>
+
+
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="settings_title">Settings</string>
-    <string name="login_welcome_title" >Welcome to Audacity</string>
+    <string name="login_welcome_title">Welcome to Audacity</string>
     <string name="home">Home</string>
     <string name="hello">Hello</string>
 </resources>
