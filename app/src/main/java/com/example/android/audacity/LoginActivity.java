@@ -49,8 +49,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
         mGoogleSignInButton = findViewById(R.id.google_sign_in_button);
-        mGoogleSignInButton.setOnClickListener(this);
         mGoogleSignInButton.setSize(SignInButton.SIZE_WIDE);
+        mGoogleSignInButton.setOnClickListener(this);
+
+
     }
 
     @Override

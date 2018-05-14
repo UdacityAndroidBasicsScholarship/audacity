@@ -57,6 +57,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mRootView = inflater.inflate(R.layout.fragment_home, container, false);
+        mRootView.setVisibility(View.INVISIBLE);
         mContext = mRootView.getContext();
         mHottestAppTitle = mRootView.findViewById(R.id.hottest_app_title);
         mHottestStudentName = mRootView.findViewById(R.id.hottest_app_student_name);
@@ -92,6 +93,7 @@ public class HomeFragment extends Fragment {
                         Glide.with(mContext).load(profileImage).into(mChallengeProfileImage);
                     }
                 }
+                mRootView.setVisibility(View.VISIBLE);
             }
 
             @Override
