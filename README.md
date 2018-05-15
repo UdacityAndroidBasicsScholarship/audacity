@@ -1,6 +1,10 @@
-# audacity
+# Audacity -A Collabrative Project under Udacity Scholarship Programme
 
-Giving The Community A Common Platform Where Student's, Developers Together Can Showcase Their Work And Build Their Personal Portfolio. Feel Free To Share And Experience Everything Around Udacity
+Breif Idea:
+'Giving The Community A Common Platform Where Student's, Developers Together Can Showcase Their Work And Build Their Personal Portfolio. Feel Free To Share And Experience Everything Around Udacity`
+
+## Disclaimer
+> `This project is only for the students who participated in Udacity Scholarship Programme.`
 
 ## What's Included?
 <ol>
@@ -18,19 +22,19 @@ Giving The Community A Common Platform Where Student's, Developers Together Can 
   <li>Popular Apps</li>
 </ol>
 
-## Maintainers
-<ul>
-  <li>Kshitij Suri</li>
-  <li>pallab (Pallab Kalita)</li>
-  <li>maddySmith (Maddala Krishnachaitanya)</li>
-  <li>SABDAR SHAIK</li>
-  <li>thisismenaseem</li>
-  <li>Suhanshu Patel</li>
-  <li>Mohan Cm</li>
-</ul>
+## Project Maintained by:
+
+* [Kshitij Suri](https://github.com/kshitijsuri90)
+* [pallab (Pallab Kalita)](#)
+* [maddySmith (Maddala Krishnachaitanya)](https://github.com/sloth-grrr)
+* [SABDAR SHAIK](https://github.com/sabdar18)
+* [Suhanshu Patel](https://github.com/Suhanshu123)
+* [Mohan Cm](https://github.com/mohancm)
+* [Naseem](https://github.com/naseemali925)
+* [Ankush S Shetkar](https://github.com/lifeLessCoder)
 
 ## Contributors
-All Google Udacity Andriod Basics Scholars are eligible to Contribute.
+All Google Udacity Android Basics Scholars are eligible to Contribute.
 Please Read The Contributing Guide <a href="https://github.com/UdacityAndroidBasicsScholarship/audacity/blob/master/CONTRIBUTING.md"> Here </a>
 
 ## How You Can Contribute? ##
