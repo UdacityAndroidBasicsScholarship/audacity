@@ -51,7 +51,7 @@ public class HottestAppAdapter extends RecyclerView.Adapter<HottestAppAdapter.Vi
 
     @Override
     public int getItemCount() {
-        return mHottestAppData.size();
+        return mHottestAppData == null ? 0 : mHottestAppData.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
