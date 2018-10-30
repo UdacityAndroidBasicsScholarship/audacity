@@ -1,7 +1,7 @@
 # Audacity -A Collabrative Project under Udacity Scholarship Programme
 
-Breif Idea:
-'Giving The Community A Common Platform Where Student's, Developers Together Can Showcase Their Work And Build Their Personal Portfolio. Feel Free To Share And Experience Everything Around Udacity`
+Brief Idea:
+'Giving The Community A Common Platform Where Students, Developers together can Showcase their work And build their Personal Portfolio. Feel Free To Share And Experience Everything Around Udacity`
 
 ## Disclaimer
 > `This project is only for the students who participated in Udacity Scholarship Programme (Android Basics Course).`
@@ -14,7 +14,7 @@ Breif Idea:
   <li>Results</li>
 </ol>
 
-## Future Addons
+## Future Add-ons
 <ol>
   <li>Git Integration</li>
   <li>Slack Channel</li>
@@ -125,7 +125,7 @@ Now, it may be desirable to squash some of your smaller commits down into a smal
 
 ```shell
 # Rebase all commits on your development branch
-git checkout 
+git checkout
 git rebase -i master
 ```
 
