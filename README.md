@@ -4,7 +4,7 @@ Breif Idea:
 'Giving The Community A Common Platform Where Student's, Developers Together Can Showcase Their Work And Build Their Personal Portfolio. Feel Free To Share And Experience Everything Around Udacity`
 
 ## Disclaimer
-> `This project is only for the students who participated in Udacity Scholarship Programme.`
+> `This project is only for the students who participated in Udacity Scholarship Programme (Android Basics Course).`
 
 ## What's Included?
 <ol>
