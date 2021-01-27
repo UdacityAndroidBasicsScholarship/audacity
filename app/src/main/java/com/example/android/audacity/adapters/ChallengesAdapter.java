@@ -51,7 +51,7 @@ public class ChallengesAdapter extends RecyclerView.Adapter<ChallengesAdapter.Vi
 
     @Override
     public int getItemCount() {
-        return mChallengeData.size();
+        return mChallengeData == null ? 0 : mChallengeData.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
