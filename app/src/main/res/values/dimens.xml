@@ -14,4 +14,8 @@
     <dimen name="dimen_4dp">4dp</dimen>
     <dimen name="profile_img_width">64dp</dimen>
     <dimen name="profile_img_height">64dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+    <dimen name="dimen_64dp">64dp</dimen>
+    <dimen name="dimen_100dp">100dp</dimen>
 </resources>
